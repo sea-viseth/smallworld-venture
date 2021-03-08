@@ -155,8 +155,8 @@ h3 {
   text-align: center;
 }
 .partner p {
-  font-size: 18px;
-  padding: 0 27%;
+  /* font-size: 18px; */
+  padding: 0 25%;
 }
 .partner img {
   width: 100%;
@@ -221,7 +221,7 @@ h3 {
 .news .card .card-des .name-badge {
   background-color: #94bbd4;
   color: #015e98;
-  padding: 0 10px;
+  padding: 1px 13px;
   border-radius: 4px;
 }
 .load-more-btn {

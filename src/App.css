@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: rgb(248, 248, 248);
+  background-color: #f5f5f5;
 }
 p,
 a {
@@ -34,8 +34,7 @@ h3 {
 /* navbar */
 .nav {
   padding: 0 15%;
-  position: relative;
-  z-index: 1;
+
   background-color: rgb(1, 94, 152);
 }
 /* .nav::before {
@@ -46,14 +45,17 @@ h3 {
   width: 100%;
   height: 100%;
   background-color: rgb(1, 94, 152);
-  z-index: -2 !important;
 } */
 .nav img {
   width: 130px;
 }
+.ant-col {
+  z-index: 1;
+}
 .nav a {
   color: white;
   font-weight: 700;
+  z-index: 2;
 }
 .open-menu-btn {
   color: white;
@@ -91,17 +93,100 @@ h3 {
 }
 /* home */
 .home {
-  position: relative;
+  z-index: 1;
 }
-.home h1 {
+.big-header {
+  background-image: url(/src/asset/home-banner.png);
+  background-repeat: no-repeat;
+  /* top: 0; */
+  margin-top: -170px;
+  background-position-y: -20px;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 50px;
+  /* position: absolute; */
+}
+.banner {
+  width: 600px;
+  top: 70px;
+  position: absolute;
+  /* margin-top: 50px; */
+  /* margin-bottom: 40%; */
+}
+.banner h1,
+.banner p {
   color: white;
 }
-.home p {
-  color: #fff;
+.banner h1 {
+  font-size: 30px;
+  margin: 0;
 }
-.home span {
-  margin: 0 15px;
+.banner h1 span:first-child {
+  margin-right: 10px;
   color: #fcc400;
+}
+.banner h1 span:nth-child(2) {
+  color: #fcc400;
+  margin-left: 10px;
+}
+.learn-more-btn {
+  border: none;
+  padding: 9px 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #015e98;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.learn-more-btn:hover {
+  color: #015e98 !important;
+}
+.card-box-info {
+  /* height: 487.417px; */
+  text-align: center;
+  padding: 25px;
+  border-radius: 4px;
+  background-color: hsla(0, 0%, 82.7%, 0.29);
+}
+.card-box-info h3 {
+  font-weight: bold;
+}
+.card-box-info p {
+  text-align: left;
+  font-size: 18px;
+}
+.card-box-info img {
+  width: 200px;
+  margin-bottom: 20px;
+  height: 150px;
+}
+.idea-banner {
+  background-position-x: -70px;
+  background-image: url(./asset/idea-banner.png);
+  background-position: center;
+  padding: 100px 50% 100px 15%;
+}
+.idea-banner h1,
+.idea-banner p {
+  color: white;
+}
+.idea-banner h1 {
+  font-size: 30px;
+}
+.contact-us-btn {
+  border: none;
+  padding: 9px 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #015e98;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 56px;
+}
+.contact-us-btn:hover {
+  color: #015e98 !important;
 }
 
 /* about */
@@ -425,6 +510,27 @@ input[type="text"]:focus {
   h2 {
     font-size: 26px !important;
   }
+  .big-header {
+    background-image: none;
+    background-color: #053f64 !important;
+  }
+  .big-header {
+    height: 90vh;
+  }
+  .banner {
+    top: 50px;
+  }
+  .idea-banner {
+    background-position-x: -300px;
+    background-position-y: -45px;
+    padding: 50px 50% 50px 10%;
+  }
+  .idea-banner p {
+    font-size: 18px;
+  }
+  .banner h1 {
+    font-size: 40px;
+  }
   .footer {
     padding: 60px 10%;
   }
@@ -438,7 +544,6 @@ input[type="text"]:focus {
   .spaces h2 {
     font-size: 28px !important;
   }
-
   .spaces p {
     font-size: 18px !important;
   }

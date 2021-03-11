@@ -95,24 +95,28 @@ h3 {
 .home {
   z-index: 1;
 }
+
 .big-header {
   background-image: url(/src/asset/home-banner.png);
   background-repeat: no-repeat;
-  /* top: 0; */
   margin-top: -170px;
   background-position-y: -20px;
   width: 100vw;
   height: 100vh;
   margin-bottom: 50px;
-  /* position: absolute; */
+}
+.space-ship {
+  width: 100%;
+  visibility: hidden;
+  opacity: 0.7;
+  z-index: 2 !important;
 }
 .banner {
-  width: 600px;
-  top: 70px;
+  padding: 0 15%;
+  top: 140px;
   position: absolute;
-  /* margin-top: 50px; */
-  /* margin-bottom: 40%; */
 }
+
 .banner h1,
 .banner p {
   color: white;
@@ -142,12 +146,15 @@ h3 {
 .learn-more-btn:hover {
   color: #015e98 !important;
 }
+.outter-card-box {
+  margin: 25px 0;
+}
 .card-box-info {
-  /* height: 487.417px; */
+  height: 100%;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   border-radius: 4px;
-  background-color: hsla(0, 0%, 82.7%, 0.29);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .card-box-info h3 {
   font-weight: bold;
@@ -155,6 +162,8 @@ h3 {
 .card-box-info p {
   text-align: left;
   font-size: 18px;
+  margin: 0;
+  color: #979a9a !important;
 }
 .card-box-info img {
   width: 200px;
@@ -162,10 +171,9 @@ h3 {
   height: 150px;
 }
 .idea-banner {
-  background-position-x: -70px;
   background-image: url(./asset/idea-banner.png);
   background-position: center;
-  padding: 100px 50% 100px 15%;
+  padding: 50px 15%;
 }
 .idea-banner h1,
 .idea-banner p {
@@ -265,6 +273,9 @@ h3 {
   .works-content img {
     margin-top: 30px;
     width: 60%;
+  }
+  .idea-banner {
+    background-position: unset;
   }
 }
 /* news */
@@ -511,25 +522,32 @@ input[type="text"]:focus {
     font-size: 26px !important;
   }
   .big-header {
-    background-image: none;
-    background-color: #053f64 !important;
-  }
-  .big-header {
-    height: 90vh;
+    display: none;
+    /* background-image: none;
+    background-color: #053f64 !important; */
   }
   .banner {
-    top: 50px;
+    position: unset;
+    margin-top: -80px;
+    padding: 100px 10% 50px 10%;
+    background-color: #053f64;
+  }
+  .space-ship {
+    visibility: visible;
   }
   .idea-banner {
-    background-position-x: -300px;
-    background-position-y: -45px;
-    padding: 50px 50% 50px 10%;
+    padding: 50px 10%;
   }
   .idea-banner p {
     font-size: 18px;
   }
   .banner h1 {
     font-size: 40px;
+  }
+  .learn-more-btn,
+  .contact-us-btn {
+    padding: 7px 25px;
+    font-size: 16px;
   }
   .footer {
     padding: 60px 10%;
@@ -571,6 +589,12 @@ input[type="text"]:focus {
   .container {
     margin: 0 5%;
   }
+  .banner {
+    padding: 100px 5% 50px 5%;
+  }
+  .idea-banner {
+    padding: 30px 5%;
+  }
   .nav {
     padding: 0 5%;
   }
@@ -583,8 +607,17 @@ input[type="text"]:focus {
   .contact {
     padding: 0 30px 0 10%;
   }
+  .learn-more-btn,
+  .contact-us-btn {
+    font-size: 15px !important;
+    padding: 9px 20px;
+  }
 }
-
+@media only screen and (max-width: 800px) {
+  .banner {
+    top: 80px;
+  }
+}
 @media only screen and (max-width: 700px) {
   h1 {
     font-size: 35px !important;

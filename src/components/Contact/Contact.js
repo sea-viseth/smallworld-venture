@@ -124,7 +124,7 @@ function Contact() {
             width="100%"
             height="400"
             style={{ border: "none" }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
           ></iframe>
         </Col>

@@ -264,18 +264,23 @@ h3 {
   padding: 15px;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  /* min-height: 250px;
-  height: 350px; */
+  min-height: 250px;
+  /* height: 350px; */
   height: 100%;
 }
-
-.directors-photo {
+.directors-back img {
+  width: 100% !important;
+  border-radius: 8px;
+}
+/* .directors-photo {
   height: 200px;
   width: 100%;
   background-position: center;
   background-size: cover;
+
   border-radius: 8px;
-}
+} */
+
 .directors p {
   font-size: 16px;
   margin-bottom: 5px;

@@ -96,18 +96,20 @@ function About() {
               const { fullName, photo, id, position } = res;
               return (
                 <Col
+                  xs={12}
                   sm={8}
-                  md={8}
-                  lg={6}
-                  xl={4.5}
+                  md={6}
+                  xl={5}
+                  xxl={4}
                   className="xs-2 sm-3 md-4 lg-5"
                   key={id}
                 >
                   <div className="directors-back">
-                    <div
+                    {/* <div
                       style={{ backgroundImage: `url(${photo})` }}
                       className="directors-photo"
-                    ></div>
+                    ></div> */}
+                    <img src={photo} alt={fullName} />
                     <h3>{fullName}</h3>
                     <p>{position}</p>
                   </div>

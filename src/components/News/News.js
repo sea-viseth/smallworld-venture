@@ -5,29 +5,17 @@ function News() {
     <div className="container">
       <div className="news">
         <h2>COMMUNITY UPDATE</h2>
-        <Row className="outter-card" justify="space-between" gutter={[25, 25]}>
-          <Col
-            xs={{ span: 24 }}
-            sm={{ span: 24 }}
-            md={{ span: 12 }}
-            lg={{ span: 8 }}
-          >
+        <Row className="outter-card" gutter={[25, 25]}>
+          <Col xs={24} sm={24} md={12} lg={8} xl={6}>
             <Card />
           </Col>
-          <Col
-            xs={{ span: 24 }}
-            sm={{ span: 24 }}
-            md={{ span: 12 }}
-            lg={{ span: 8 }}
-          >
+          <Col xs={24} sm={24} md={12} lg={8} xl={6}>
             <Card />
           </Col>
-          <Col
-            xs={{ span: 24 }}
-            sm={{ span: 24 }}
-            md={{ span: 12 }}
-            lg={{ span: 8 }}
-          >
+          <Col xs={24} sm={24} md={12} lg={8} xl={6}>
+            <Card />
+          </Col>
+          <Col xs={24} sm={24} md={12} lg={8} xl={6}>
             <Card />
           </Col>
         </Row>
@@ -43,29 +31,17 @@ function News() {
 
       <div className="news">
         <h2>KOOMPI NEWS</h2>
-        <Row className="outter-card" justify="space-between" gutter={[25, 25]}>
-          <Col
-            xs={{ span: 24 }}
-            sm={{ span: 24 }}
-            md={{ span: 12 }}
-            lg={{ span: 8 }}
-          >
+        <Row className="outter-card" gutter={[25, 25]}>
+          <Col xs={24} sm={24} md={12} lg={8} xl={6}>
             <Card />
           </Col>
-          <Col
-            xs={{ span: 24 }}
-            sm={{ span: 24 }}
-            md={{ span: 12 }}
-            lg={{ span: 8 }}
-          >
+          <Col xs={24} sm={24} md={12} lg={8} xl={6}>
             <Card />
           </Col>
-          <Col
-            xs={{ span: 24 }}
-            sm={{ span: 24 }}
-            md={{ span: 12 }}
-            lg={{ span: 8 }}
-          >
+          <Col xs={24} sm={24} md={12} lg={8} xl={6}>
+            <Card />
+          </Col>
+          <Col xs={24} sm={24} md={12} lg={8} xl={6}>
             <Card />
           </Col>
         </Row>

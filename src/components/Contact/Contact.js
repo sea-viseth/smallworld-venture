@@ -16,7 +16,7 @@ function Contact() {
       <div className="container">
         <div className="contact-page">
           <Row gutter={50}>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }}>
+            <Col xs={24} sm={24} md={12}>
               <h2>Inquiries Request</h2>
               <Form
                 {...layout}
@@ -43,12 +43,7 @@ function Contact() {
                 </Form.Item>
               </Form>
             </Col>
-            <Col
-              className="office-info"
-              xs={{ span: 24 }}
-              sm={{ span: 24 }}
-              md={{ span: 12 }}
-            >
+            <Col className="office-info" xs={24} sm={24} md={12}>
               <h2>Our Office</h2>
               <Row align="middle">
                 <Col className="info-icon" flex="40px">
@@ -93,12 +88,7 @@ function Contact() {
         </div>
       </div>
       <Row className="smallworld" align="middle">
-        <Col
-          className="info"
-          xs={{ span: 24 }}
-          sm={{ span: 24 }}
-          lg={{ span: 12 }}
-        >
+        <Col className="info" xs={24} sm={24} md={12}>
           <h2>SmallWorld</h2>
           <p>
             We look forward to welcome you at any working hour. Though, most of
@@ -111,12 +101,7 @@ function Contact() {
             Phnom, Khan Daun Penh! Come walk around and feel it yourself.
           </p>
         </Col>
-        <Col
-          xs={{ span: 24 }}
-          sm={{ span: 24 }}
-          lg={{ span: 12 }}
-          style={{ lineHeight: "0" }}
-        >
+        <Col xs={24} sm={24} md={12} style={{ lineHeight: "0" }}>
           {" "}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7194322915257!2d104.91694471477136!3d11.571959791784728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513c9eeaf3ed%3A0x438b132cc690d205!2sSmallworld%20Realty!5e0!3m2!1sen!2skh!4v1615121857004!5m2!1sen!2skh"

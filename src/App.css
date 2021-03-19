@@ -37,7 +37,7 @@ h3 {
 }
 /* navbar */
 .nav {
-  padding: 0 15%;
+  padding: 0 12.5%;
   background-color: rgb(1, 94, 152);
 }
 /* .nav::before {
@@ -98,7 +98,6 @@ h3 {
 .home {
   z-index: 1;
 }
-
 .big-header {
   background-image: url(/src/asset/home-banner.png);
   background-repeat: no-repeat;
@@ -115,7 +114,7 @@ h3 {
   z-index: 2 !important;
 }
 .banner {
-  padding: 0 15%;
+  padding: 0 12.5%;
   top: 140px;
   position: absolute;
 }
@@ -220,10 +219,10 @@ h3 {
   width: 100%;
 }
 .about .about-info {
-  margin-left: 15%;
+  margin-left: 12.5%;
 }
 .about .about-info h1 {
-  font-size: 30px;
+  font-size: 30px !important;
   font-weight: 800;
   color: #015e98;
 }
@@ -235,14 +234,7 @@ h3 {
   font-weight: 800;
   color: #015e98;
 }
-.partner-container {
-  width: 55%;
-  margin: 0px auto;
-}
-.img-responsive {
-  width: 100%;
-  max-width: 100%;
-}
+
 .about-title span {
   color: #c2c2c2;
 }
@@ -272,8 +264,9 @@ h3 {
   padding: 15px;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  min-height: 250px;
-  height: 350px;
+  /* min-height: 250px;
+  height: 350px; */
+  height: 100%;
 }
 
 .directors-photo {
@@ -288,20 +281,27 @@ h3 {
   margin-bottom: 5px;
 }
 /* partner */
+
 .partner {
   margin: 100px 0;
   text-align: center;
+}
+.partner-container {
+  width: 70%;
+  margin: 0px auto;
+}
+.img-responsive {
+  width: 100%;
+  max-width: 100%;
 }
 .partner p {
   /* font-size: 18px; */
   padding: 0 25%;
 }
-.partner img {
-  width: 100%;
-}
+
 /* works */
 .works-content {
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .works-content p {
@@ -325,7 +325,7 @@ h3 {
 }
 /* news */
 .news {
-  margin-top: 40px;
+  /* margin-top: 30px; */
   margin-bottom: 30px;
   text-align: center !important;
 }
@@ -344,7 +344,7 @@ h3 {
   font-weight: 900;
   font-size: 40px;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 60px;
 }
 .outter-card {
@@ -585,7 +585,8 @@ input[type="text"]:focus {
     padding: 0 10%;
   }
   .container {
-    margin: 0 10%;
+    width: 80% !important;
+    margin: 0 auto;
   }
   h2 {
     font-size: 26px !important;
@@ -605,7 +606,7 @@ input[type="text"]:focus {
     visibility: visible;
   }
   .idea-banner {
-    padding: 50px 10%;
+    padding: 50px 0;
   }
   .idea-banner p {
     font-size: 18px;
@@ -650,16 +651,20 @@ input[type="text"]:focus {
 }
 @media only screen and (max-width: 992px) {
   .about .about-info {
-    margin: 50px 5% 0 5%;
+    margin: 40px 5% 0 5%;
   }
 }
 
 @media only screen and (max-width: 1000px) {
+  .container {
+    width: 90% !important;
+    margin: 0 auto;
+  }
   .banner {
-    padding: 80px 5% 50px 5%;
+    padding: 90px 5% 50px 5%;
   }
   .idea-banner {
-    padding: 30px 5%;
+    padding: 30px 0;
   }
   .nav {
     padding: 0 5%;
@@ -677,6 +682,10 @@ input[type="text"]:focus {
   .contact-us-btn {
     font-size: 15px !important;
     padding: 9px 20px;
+  }
+  .news h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -704,5 +713,8 @@ input[type="text"]:focus {
 @media only screen and (max-width: 500px) {
   h1 {
     font-size: 30px !important;
+  }
+  .about .about-info h1 {
+    font-size: 26px !important;
   }
 }

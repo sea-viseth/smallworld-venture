@@ -5,7 +5,7 @@ function Spaces() {
       <div className="container">
         <div className="spaces">
           <Row align="middle">
-            <Col xs={{ span: 24 }} md={{ span: 15 }} lg={{ span: 10 }}>
+            <Col xs={24} md={15} lg={10}>
               <h1>Working community of professionals, creatives and artists</h1>
               <h3>Starting from</h3>
               <div className="price-badge">$99/month</div>
@@ -17,7 +17,7 @@ function Spaces() {
                 />
               </a>
             </Col>
-            <Col xs={{ span: 24 }} md={{ span: 9 }} lg={{ span: 14 }}>
+            <Col xs={24} md={9} lg={14}>
               <img
                 className="img-banner"
                 src="/images/spaces/space-banner.png"
@@ -26,10 +26,10 @@ function Spaces() {
             </Col>
           </Row>
           <Row className="spaces-info" justify="start" gutter={20}>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 6 }}>
+            <Col xs={24} sm={24} lg={6}>
               <h2>About</h2>
             </Col>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 18 }}>
+            <Col xs={24} sm={24} lg={18}>
               <p>
                 SmallWorld provides professional shared workspace and business
                 accelerator space where freelancers, newly forming and existing
@@ -50,56 +50,56 @@ function Spaces() {
           </Row>
           <Image.PreviewGroup>
             <Row id="img-preview" className="img-preview" gutter={[1, 1]}>
-              <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 8 }}>
+              <Col xs={24} sm={24} md={8}>
                 <Image
                   width="100%"
                   height="100%"
                   src="/images/spaces/space01.jpg"
                 />
               </Col>
-              <Col xs={{ span: 24 }} sm={{ span: 16 }} md={{ span: 8 }}>
+              <Col xs={24} sm={16} md={8}>
                 <Image
                   width="100%"
                   height="100%"
                   src="/images/spaces/space02.jpg"
                 />
               </Col>
-              <Col xs={{ span: 12 }} sm={{ span: 8 }} md={{ span: 4 }}>
+              <Col xs={12} sm={8} md={4}>
                 <Image
                   width="100%"
                   height="100%"
                   src="/images/spaces/space03.jpg"
                 />
               </Col>
-              <Col xs={{ span: 12 }} sm={{ span: 8 }} md={{ span: 4 }}>
+              <Col xs={12} sm={8} md={4}>
                 <Image
                   width="100%"
                   height="100%"
                   src="/images/spaces/space04.jpg"
                 />
               </Col>
-              <Col xs={{ span: 24 }} sm={{ span: 16 }} md={{ span: 6 }}>
+              <Col xs={24} sm={16} md={6}>
                 <Image
                   width="100%"
                   height="100%"
                   src="/images/spaces/space05.jpg"
                 />
               </Col>
-              <Col xs={{ span: 8 }} sm={{ span: 8 }} md={{ span: 4 }}>
+              <Col xs={8} sm={8} md={4}>
                 <Image
                   width="100%"
                   height="100%"
                   src="/images/spaces/space06.jpg"
                 />
               </Col>
-              <Col xs={{ span: 16 }} sm={{ span: 16 }} md={{ span: 7 }}>
+              <Col xs={16} sm={16} md={7}>
                 <Image
                   width="100%"
                   height="100%"
                   src="/images/spaces/space07.jpg"
                 />
               </Col>
-              <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 7 }}>
+              <Col xs={24} sm={24} md={7}>
                 <Image
                   width="100%"
                   height="100%"
@@ -109,10 +109,10 @@ function Spaces() {
             </Row>
           </Image.PreviewGroup>
           <Row className="spaces-info" justify="start" gutter={20}>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 6 }}>
+            <Col xs={24} sm={24} lg={6}>
               <h2>Why SmallWorld Realty? </h2>
             </Col>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 18 }}>
+            <Col xs={24} sm={24} lg={18}>
               <p>
                 We spent approximately one-third of our day at work. What
                 defines a good work space and what are the factors that
@@ -134,10 +134,10 @@ function Spaces() {
             </Col>
           </Row>
           <Row className="spaces-info" justify="start" gutter={20}>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 6 }}>
+            <Col xs={24} sm={24} lg={6}>
               <h2>SmallWorld Raintree </h2>
             </Col>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 18 }}>
+            <Col xs={24} sm={24} lg={18}>
               <p>
                 If you are looking for a professional, corporate-style work
                 space in the heart of the city, SmallWorld Raintree might be
@@ -149,10 +149,10 @@ function Spaces() {
             </Col>
           </Row>
           <Row className="spaces-info" justify="start" gutter={20}>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 6 }}>
+            <Col xs={24} sm={24} lg={6}>
               <h2>SmallWorld Pteas Boran </h2>
             </Col>
-            <Col xs={{ span: 24 }} sm={{ span: 24 }} lg={{ span: 18 }}>
+            <Col xs={24} sm={24} lg={18}>
               <p>
                 Boran What if your team likes your space a little
                 unconventional? We’d like to introduce you to a more homely
@@ -166,7 +166,7 @@ function Spaces() {
         </div>
       </div>
       <Row className="contact-location" align="middle">
-        <Col className="contact" xs={{ span: 24 }} sm={{ span: 12 }}>
+        <Col className="contact" xs={24} sm={12}>
           <h2>Contact Us</h2>
           <h3>Phone</h3>
           <p>+855 (0) 17 669 881</p>
@@ -178,7 +178,7 @@ function Spaces() {
             RAINTREE: #299 Preah Ang Doung, Wat Phnom, Daun Penh, Phnom Penh
           </p>
         </Col>
-        <Col xs={{ span: 24 }} sm={{ span: 12 }} style={{ lineHeight: "0" }}>
+        <Col xs={24} sm={12} style={{ lineHeight: "0" }}>
           {" "}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.7194322915257!2d104.91694471477136!3d11.571959791784728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513c9eeaf3ed%3A0x438b132cc690d205!2sSmallworld%20Realty!5e0!3m2!1sen!2skh!4v1615121857004!5m2!1sen!2skh"

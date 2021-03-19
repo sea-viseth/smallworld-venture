@@ -95,7 +95,14 @@ function About() {
             {data.map((res) => {
               const { fullName, photo, id, position } = res;
               return (
-                <Col className="xs-2 sm-3 md-4 lg-5" key={id}>
+                <Col
+                  sm={8}
+                  md={8}
+                  lg={6}
+                  xl={4.5}
+                  className="xs-2 sm-3 md-4 lg-5"
+                  key={id}
+                >
                   <div className="directors-back">
                     <div
                       style={{ backgroundImage: `url(${photo})` }}
@@ -120,11 +127,15 @@ function About() {
             forward thinking leaders in the business world.
           </p>
           <div className="partner-container">
-            <Row justify="center" gutter={40} align="midle">
+            <Row
+              justify="center"
+              gutter={{ xs: 10, sm: 10, md: 40 }}
+              align="midle"
+            >
               {partners.map((partner) => {
                 const { photo, name, id } = partner;
                 return (
-                  <Col xs={8} sm={8} key={id}>
+                  <Col xs={8} sm={8} md={6} key={id}>
                     <img src={photo} alt={name} className="img-responsive" />
                   </Col>
                 );

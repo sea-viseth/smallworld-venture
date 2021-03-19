@@ -8,12 +8,7 @@ function Home() {
     <div className="home">
       <div className="big-header"></div>
       <Row justify="space-between" className="banner">
-        <Col
-          xs={{ span: 24 }}
-          sm={{ span: 24 }}
-          xl={{ span: 14 }}
-          xxl={{ span: 10 }}
-        >
+        <Col xs={24} sm={24} xl={14} xxl={10}>
           <Row gutter={[0, 20]}>
             <Col>
               <h1>
@@ -44,12 +39,7 @@ function Home() {
             </Col>
           </Row>
         </Col>
-        <Col
-          xs={{ span: 0 }}
-          sm={{ span: 0 }}
-          xl={{ span: 10 }}
-          xxl={{ span: 0 }}
-        >
+        <Col xs={0} sm={0} xl={10} xxl={0}>
           <img
             className="space-ship"
             src="/images/spaceship.png"
@@ -59,28 +49,28 @@ function Home() {
       </Row>
       <div className="container ">
         <Row className="outter-card-box" gutter={[24, 24]}>
-          <Col md={{ span: 12 }} xl={{ span: 6 }}>
+          <Col md={12} xl={6}>
             <CardBox
               title="Startup Community"
               des="SmallWorld Ventures is committed to becoming the number one catalyst for funding and assisting startups in Cambodia."
               src="/images/start-up.png"
             />
           </Col>
-          <Col md={{ span: 12 }} xl={{ span: 6 }}>
+          <Col md={12} xl={6}>
             <CardBox
               title="Seed Equity Investments"
               des="Seed Equity Investments are provided to promising startup teams with projects ranging between 5,000 to 25,000 USD."
               src="/images/venture-building.png"
             />
           </Col>
-          <Col md={{ span: 12 }} xl={{ span: 6 }}>
+          <Col md={12} xl={6}>
             <CardBox
               title="Venture Building"
               des="Smallworld Ventures has built an internal team of technicians engaged in research and development projects with an aim to spin off new ventures."
               src="/images/investment.png"
             />
           </Col>
-          <Col md={{ span: 12 }} xl={{ span: 6 }}>
+          <Col md={12} xl={6}>
             <CardBox
               title="Ecovillage Development"
               des="At our rural ecovillage project, we're building a hands-on learning, working, and living environment with a balance among the natural world, education, economics, and sustainable living practices."
@@ -121,28 +111,31 @@ function Home() {
         <div className="news">
           <h2>COMMUNITY NEWS</h2>
           <Row className="outter-card" gutter={[25, 25]}>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+            <Col xs={24} sm={24} md={12} lg={8} xl={6}>
               <Card />
             </Col>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+            <Col xs={24} sm={24} md={12} lg={8} xl={6}>
               <Card />
             </Col>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+            <Col xs={24} sm={24} md={12} lg={8} xl={6}>
               <Card />
             </Col>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+            <Col xs={24} sm={24} md={12} lg={8} xl={6}>
               <Card />
             </Col>
           </Row>
           <h2>KOOMPI NEWS</h2>
           <Row className="outter-card" gutter={[25, 25]}>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+            <Col xs={24} sm={24} md={12} lg={8} xl={6}>
               <Card />
             </Col>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+            <Col xs={24} sm={24} md={12} lg={8} xl={6}>
               <Card />
             </Col>
-            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
+            <Col xs={24} sm={24} md={12} lg={8} xl={6}>
+              <Card />
+            </Col>
+            <Col xs={24} sm={24} md={12} lg={8} xl={6}>
               <Card />
             </Col>
           </Row>

@@ -96,12 +96,12 @@ function About() {
               const { fullName, photo, id, position } = res;
               return (
                 <Col
+                  // className="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-8 ant-col-xl-5"
                   xs={12}
-                  sm={8}
-                  md={6}
+                  sm={12}
+                  md={8}
                   xl={5}
-                  xxl={4}
-                  className="xs-2 sm-3 md-4 lg-5"
+                  xxl={5}
                   key={id}
                 >
                   <div className="directors-back">

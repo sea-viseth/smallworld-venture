@@ -12,7 +12,9 @@ function Content({ content }) {
           {content.title.length > 1 ? (
             content.title.map((title, i) => (
               <>
-                <h2>{title}</h2>
+                <h2 className="about-title-content">
+                  <span>&lt;</span> {title} <span>/&gt;</span>
+                </h2>
                 {content.des[i].split(".").map((des, n) => (
                   <p>
                     {n === content.des[i].split(".").length - 1
@@ -24,7 +26,9 @@ function Content({ content }) {
             ))
           ) : (
             <>
-              <h2>{content.title}</h2>
+              <h2 className="about-title-content">
+                <span>&lt;</span> {content.title} <span>/&gt;</span>
+              </h2>
               {content.des.split(".").map((des, i) => (
                 <p>
                   {i === content.des.split(".").length - 1 ? "" : des + "."}

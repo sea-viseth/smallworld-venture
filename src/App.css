@@ -195,11 +195,11 @@ h3 {
   border: none;
   padding: 12px 40px;
   border-radius: 30px;
-  color: #015e98 !important;
+  color: #444 !important;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   font-size: 16px;
-  line-height: 70px;
+  line-height: 0px;
   background: linear-gradient(180deg, #fce34b, #eac101) !important;
   transition: 0.3s;
   position: relative;
@@ -233,6 +233,16 @@ h3 {
   font-size: 32px;
   font-weight: 800;
   color: #015e98;
+}
+
+.about-title-content {
+  font-size: 28px;
+  font-weight: 900;
+  color: #015e98;
+}
+
+.about-title-content span {
+  color: #c2c2c2;
 }
 
 .about-title span {
@@ -306,7 +316,7 @@ h3 {
 
 /* works */
 .works-content {
-  margin: 40px 0;
+  margin: 100px 0;
 }
 
 .works-content p {
@@ -349,7 +359,15 @@ h3 {
   font-weight: 900;
   font-size: 40px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 60px;
+}
+.news h2 span {
+  color: #cfcfcf;
+}
+.p-description {
+  width: 60%;
+  margin: 0px auto;
+  font-size: 22px;
   margin-bottom: 60px;
 }
 .outter-card {
@@ -362,7 +380,7 @@ h3 {
   position: relative;
   top: 0px;
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .news .card:hover {
   top: -5px;
@@ -370,11 +388,17 @@ h3 {
 }
 .news .card img {
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
   /* height: 206.633px !important; */
 }
 .news .card .card-des {
   padding: 20px 20px;
+  min-height: 220px;
+  position: relative;
+}
+.card-des .card-desc {
+  font-size: 16px !important;
+  color: #333;
 }
 .news .card .card-des .name-badge {
   background: rgb(2, 0, 36);
@@ -389,6 +413,8 @@ h3 {
   font-size: 12px;
   padding: 5px 20px;
   border-radius: 4px;
+  position: absolute;
+  bottom: 10px;
 }
 .load-more-btn {
   background-color: #94bbd4;
@@ -403,7 +429,59 @@ h3 {
 .ant-btn:focus,
 .ant-btn:active {
   background-color: #94bbd4 !important;
-  color: #015e98 !important;
+  color: #616161 !important;
+}
+.card-desc figure img,
+.card-des figure figcaption {
+  display: none;
+}
+.card-desc p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.card-image {
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 6px 6px 0px 0px;
+}
+.loading {
+  width: 100% !important;
+}
+img {
+  width: 100%;
+}
+.ant-modal-close-x {
+  display: block;
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 40px !important;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  background: #d9d5d5;
+  border-radius: 50%;
+  position: relative;
+  left: -15px;
+  top: 15px;
+}
+.ant-modal,
+.ant-modal-body {
+  font-size: 18px !important;
+}
+
+.ant-modal-body ul {
+  padding-left: 20px !important;
+}
+.card-modal .ant-modal-body {
+  height: 95vh !important;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+.card-modal .ant-modal-body p {
+  font-size: 18px !important;
 }
 /* spaces */
 .spaces {
@@ -450,10 +528,6 @@ h3 {
 .spaces .img-preview {
   margin: 50px 0;
 }
-.lg-5 {
-  width: 20%;
-  margin: 0px auto;
-}
 .spaces .img-preview .ant-col {
   line-height: 0 !important;
 }
@@ -470,6 +544,7 @@ h3 {
   font-weight: 700;
   margin-top: 30px;
 }
+
 .contact-location h2,
 .contact-location h3,
 .contact-location p {
@@ -547,19 +622,7 @@ input[type="text"]:focus {
 .smallworld p {
   font-size: 18px !important;
 }
-@media only screen and (max-width: 992px) {
-  .smallworld .info {
-    padding: 30px 5%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .contact-page {
-    margin: 30px 0;
-  }
-  .office-info {
-    margin-top: 30px;
-  }
-}
+
 /* footer */
 .footer {
   padding: 60px 15%;
@@ -654,11 +717,6 @@ input[type="text"]:focus {
     padding: 0;
   }
 }
-@media only screen and (max-width: 992px) {
-  .about .about-info {
-    margin: 40px 5% 0 5%;
-  }
-}
 
 @media only screen and (max-width: 1000px) {
   .container {
@@ -693,6 +751,28 @@ input[type="text"]:focus {
     margin-bottom: 20px;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .smallworld .info {
+    padding: 30px 5%;
+  }
+  .about .about-info {
+    margin: 40px 5% 0 5%;
+  }
+  .works-content img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-page {
+    margin: 30px 0;
+  }
+  .office-info {
+    margin-top: 30px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .banner {
     top: 80px;

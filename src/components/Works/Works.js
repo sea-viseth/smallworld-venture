@@ -43,10 +43,9 @@ function Works() {
 
   return (
     <div className="container">
-      <Content content={content[0]} />
-      <Content content={content[1]} />
-      <Content content={content[2]} />
-      <Content content={content[3]} />
+      {content.map((res, index) => {
+        return <Content content={content[index]} />;
+      })}
     </div>
   );
 }

@@ -1,21 +1,73 @@
-import { Typography } from "antd";
-import React from "react";
-const { Paragraph } = Typography;
-function Card() {
+import { Modal } from "antd";
+import React, { useState } from "react";
+import parseHTML from "html-react-parser";
+
+function stripHtmlTags(str) {
+  if (str === null || str === "") return false;
+  return str.replace(/<[^>]*>/g, "");
+}
+
+function Card({ image, title, desc, author }) {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
   return (
-    <div className="card">
-      <img src="/images/news/cu02.jpeg" alt="cummunity upadate" />
-      <div className="card-des">
-        <h3>Plan your next adventure with Tursaknak!</h3>
-        <Paragraph ellipsis={{ rows: 3 }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-          alias, ipsa sapiente dicta officiis exercitationem atque nisi
-          perferendis ducimus magni rem sit, quia eum commodi. Voluptatibus
-          earum natus aliquid voluptatem?
-        </Paragraph>
-        <span className="name-badge">Users One</span>
+    <React.Fragment>
+      <Modal
+        visible={isModalVisible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        width="800px"
+        footer={null}
+        title={null}
+        style={{ top: 20 }}
+        className="card-modal"
+      >
+        {parseHTML(`${desc}`)}
+      </Modal>
+
+      <div className="card" onClick={showModal}>
+        {/* <div
+        style={{ backgroundImage: `url(${image})` }}
+        className="card-image"
+      ></div> */}
+        {image ? (
+          <div
+            style={{
+              backgroundImage: `url(${image})`,
+            }}
+            className="card-image"
+          />
+        ) : (
+          <div
+            className="card-image"
+            style={{
+              backgroundImage: `url("/images/default_img.png")`,
+            }}
+          />
+        )}
+        <div className="card-des">
+          <h3>{`${
+            title.length > 40 ? `${title.substring(0, 50)}...` : title
+          }`}</h3>
+          <div className="card-desc">
+            {`${stripHtmlTags(`${desc}`).substring(0, 90)}...`}
+          </div>
+          <span className="name-badge">{author}</span>
+        </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 

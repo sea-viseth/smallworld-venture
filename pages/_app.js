@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import Head from "next/head";
+import "antd/dist/antd.css";
+import "../styles/globals.css";
+import Layout from "../comps/Layout";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;

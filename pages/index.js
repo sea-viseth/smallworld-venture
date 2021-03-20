@@ -1,65 +1,229 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React, { useState, useEffect } from "react";
+import Card from "../comps/Card";
+import CardBox from "../comps/CardBox";
+import { Row, Col, Spin, Button } from "antd";
+import axios from "axios";
+import Link from "next/link";
 
-export default function Home() {
+// Card for news
+// CardBox for smallworld info
+function Home() {
+  const [community, setCommunity] = useState([]);
+  const [koompi, setKoompi] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/koompi"
+      )
+      .then((res) => {
+        setKoompi(res.data.items);
+      });
+    axios
+      .get(
+        "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/smallworldvc"
+      )
+      .then((res) => {
+        console.log(res.data);
+        setCommunity(res.data.items);
+      });
+  }, []);
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div className="home">
+      <div className="big-header"></div>
+      <Row justify="space-between" className="banner">
+        <Col xs={24} sm={24} xl={14} xxl={10}>
+          <Row gutter={[0, 20]}>
+            <Col>
+              <h1>
+                <span>&lt;</span>
+                Homegrown Startup Community
+                <span>/&gt;</span>
+              </h1>
+            </Col>
+            <Col>
+              <p>
+                We began in 2011 by providing a collaborative workspace
+                environment for entrepreneurs, and then quickly moved forward
+                raising investment capital to fund new startup projects.
+              </p>
+            </Col>
+            <Col>
+              <p>
+                With a variety of research and development projects in motion
+                today, we're involved in startup venture building through
+                community supported seed equity investments, together with rural
+                ecovillage development and long-term land management.
+              </p>
+            </Col>
+            <Col>
+              <a className="sw-default-btn" href="/about">
+                LEARN MORE
+              </a>
+            </Col>
+          </Row>
+        </Col>
+        <Col xs={0} sm={0} xl={10} xxl={0}>
+          <img
+            className="space-ship"
+            src="/images/spaceship.png"
+            alt="space-ship"
+          />
+        </Col>
+      </Row>
+      <div className="container ">
+        <Row className="outter-card-box" gutter={[24, 24]}>
+          <Col md={12} xl={6}>
+            <CardBox
+              title="Startup Community"
+              des="SmallWorld Ventures is committed to becoming the number one catalyst for funding and assisting startups in Cambodia."
+              src="/images/start-up.png"
+            />
+          </Col>
+          <Col md={12} xl={6}>
+            <CardBox
+              title="Seed Equity Investments"
+              des="Seed Equity Investments are provided to promising startup teams with projects ranging between 5,000 to 25,000 USD."
+              src="/images/venture-building.png"
+            />
+          </Col>
+          <Col md={12} xl={6}>
+            <CardBox
+              title="Venture Building"
+              des="Smallworld Ventures has built an internal team of technicians engaged in research and development projects with an aim to spin off new ventures."
+              src="/images/investment.png"
+            />
+          </Col>
+          <Col md={12} xl={6}>
+            <CardBox
+              title="Ecovillage Development"
+              des="At our rural ecovillage project, we're building a hands-on learning, working, and living environment with a balance among the natural world, education, economics, and sustainable living practices."
+              src="/images/reforest.png"
+            />
+          </Col>
+        </Row>
+      </div>
+      <div className="idea-banner">
+        <div className="container">
+          <Row>
+            <Col md={{ span: 16 }} xl={{ span: 12 }}>
+              <h1>
+                <span>&lt;</span> Have some ideas for new venture?{" "}
+                <span>/&gt;</span>
+              </h1>
+              <p>
+                We're looking for new approaches to problem solving and creating
+                business.Do you have an innovative idea for a startup venture?
+              </p>
+              <p>
+                Or maybe you have a skillset in mind that you want to develop as
+                you work within our existing SmallWorld venture.
+              </p>
+              <p>
+                We're open to discussing your own startup ideas, however
+                unconventional, regardless of age, gender, or nationality.
+              </p>
+              <p>Send us a message!</p>
+              <a href="/contact" className="sw-default-btn">
+                CONTACT US
+              </a>
+            </Col>
+          </Row>
         </div>
-      </main>
+      </div>
+      <div className="container">
+        <div className="news">
+          <br />
+          <h2>
+            <span>&lt; </span>
+            COMMUNITY NEWS
+            <span> /&gt;</span>
+          </h2>
+          <p className="p-description">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt
+            sociosqu ullamcorper, class per curabitur natoque orci lobortis
+            commodo varius suscipit.
+          </p>
+          <Row className="outter-card" gutter={[24, 24]}>
+            {community.length === 0 ? (
+              <div className="loading">
+                <Spin tip="Loading ..." />
+              </div>
+            ) : (
+              community.slice(0, 4).map((community) => {
+                const {
+                  title,
+                  description,
+                  thumbnail,
+                  author,
+                  guid,
+                } = community;
+                return (
+                  <Col xs={24} sm={24} md={12} lg={8} xl={6} key={guid}>
+                    <Card
+                      title={title}
+                      desc={description}
+                      image={
+                        thumbnail.match(/[^/]+(jpg|png|gif|jpeg)$/)
+                          ? thumbnail
+                          : null
+                      }
+                      author={author}
+                    />
+                  </Col>
+                );
+              })
+            )}
+          </Row>
+          <Link href="/news">
+            <Button size="large" className="sw-default-btn">
+              Load More
+            </Button>
+          </Link>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+          <br />
+          <h2 className="about-title">
+            <span>&lt;</span> KOOMPI NEWS <span>/&gt;</span>
+          </h2>
+          <p className="p-description">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt
+            sociosqu ullamcorper, class per curabitur natoque orci lobortis
+            commodo varius suscipit.
+          </p>
+          <Row className="outter-card" gutter={[24, 24]}>
+            {koompi.length === 0 ? (
+              <div className="loading">
+                <Spin tip="Loading ..." />
+              </div>
+            ) : (
+              koompi.slice(0, 4).map((koompi) => {
+                const { title, description, thumbnail, author, guid } = koompi;
+                return (
+                  <Col xs={24} sm={24} md={12} lg={8} xl={6} key={guid}>
+                    <Card
+                      title={title}
+                      desc={description}
+                      image={
+                        thumbnail.match(/[^/]+(jpg|png|gif|jpeg)$/)
+                          ? thumbnail
+                          : null
+                      }
+                      author={author}
+                    />
+                  </Col>
+                );
+              })
+            )}
+          </Row>
+          <Link href="/news">
+            <Button size="large" className="sw-default-btn">
+              Load More
+            </Button>
+          </Link>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
+
+export default Home;

@@ -37,7 +37,7 @@ function Contact() {
                   <Button
                     className="sw-default-btn"
                     htmlType="submit"
-                    style={{ padding: "23px 50px" }}
+                    style={{ padding: "20px 40px" }}
                   >
                     Submit
                   </Button>

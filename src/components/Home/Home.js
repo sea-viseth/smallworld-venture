@@ -56,7 +56,7 @@ function Home() {
               </p>
             </Col>
             <Col>
-              <a className="sw-default-btn" href="/about">
+              <a className="sw-default-btn load-more-btn" href="/about">
                 LEARN MORE
               </a>
             </Col>
@@ -105,7 +105,7 @@ function Home() {
       <div className="idea-banner">
         <div className="container">
           <Row>
-            <Col md={{ span: 16 }} xl={{ span: 12 }}>
+            <Col md={16} xl={13} xxl={12}>
               <h1>
                 <span>&lt;</span> Have some ideas for new venture?{" "}
                 <span>/&gt;</span>
@@ -122,8 +122,8 @@ function Home() {
                 We're open to discussing your own startup ideas, however
                 unconventional, regardless of age, gender, or nationality.
               </p>
-              <p>Send us a message!</p>
-              <a href="/contact" className="sw-default-btn">
+              <p className="send-us-message">Send us a message!</p>
+              <a href="/contact" className="sw-default-btn contact-us-btn">
                 CONTACT US
               </a>
             </Col>

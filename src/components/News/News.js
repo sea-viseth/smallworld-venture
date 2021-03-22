@@ -62,15 +62,6 @@ function News() {
             })
           )}
         </Row>
-
-        {/* <Button
-          size="large"
-          target="_blank"
-          href="https://medium.com/@smallworldvc"
-          className="sw-default-btn"
-        >
-          Load More
-        </Button> */}
       </div>
 
       <div className="news">

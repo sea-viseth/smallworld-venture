@@ -33,7 +33,7 @@ h3 {
 }
 .container {
   width: 75% !important;
-  margin: 0px auto;
+  margin: 0px auto !important;
 }
 /* navbar */
 .nav {
@@ -150,7 +150,7 @@ h3 {
   color: #015e98 !important;
 }
 .outter-card-box {
-  margin: 80px 0px;
+  margin: 80px 0px !important;
 }
 .card-box-info {
   height: 100%;
@@ -177,7 +177,7 @@ h3 {
 .idea-banner {
   background-image: url(./asset/idea-banner.png);
   background-position: center;
-  padding: 100px 0px;
+  padding: 100px 0px 120px 0;
 }
 .idea-banner h1,
 .idea-banner p {
@@ -190,6 +190,9 @@ h3 {
 .idea-banner h1 {
   font-size: 32px;
   font-weight: 800;
+}
+.send-us-message {
+  margin-bottom: 30px;
 }
 .sw-default-btn {
   border: none;
@@ -205,6 +208,7 @@ h3 {
   position: relative;
   top: 0px;
 }
+
 .sw-default-btn:hover {
   box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
   top: -3px;
@@ -287,7 +291,6 @@ h3 {
   width: 100%;
   background-position: center;
   background-size: cover;
-
   border-radius: 8px;
 } */
 
@@ -330,6 +333,9 @@ h3 {
   text-align: center;
 }
 @media only screen and (max-width: 768px) {
+  .works-content {
+    margin: 40px 0;
+  }
   .works-content img {
     margin-top: 30px;
     width: 60%;
@@ -377,13 +383,12 @@ h3 {
   background-color: white;
   text-align: left;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  position: relative;
-  top: 0px;
   transition: 0.3s;
   border-radius: 8px;
+  height: 100%;
 }
 .news .card:hover {
-  top: -5px;
+  transform: translateY(-5px);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .news .card img {
@@ -393,13 +398,16 @@ h3 {
 }
 .news .card .card-des {
   padding: 20px 20px;
-  min-height: 220px;
-  position: relative;
-}
-.card-des .card-desc {
+  /* min-height: 230px;
+  position: relative; */
   font-size: 16px !important;
   color: #333;
 }
+.news .card .card-des .card-desc {
+  min-height: 120px;
+  position: relative;
+}
+
 .news .card .card-des .name-badge {
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -416,15 +424,6 @@ h3 {
   position: absolute;
   bottom: 10px;
 }
-.load-more-btn {
-  background-color: #94bbd4;
-  color: #1e70bf;
-  font-weight: 700;
-  border-radius: 20px;
-  padding: 0 60px;
-  border: none;
-}
-
 .ant-btn:hover,
 .ant-btn:focus,
 .ant-btn:active {
@@ -690,7 +689,7 @@ input[type="text"]:focus {
     visibility: visible;
   }
   .idea-banner {
-    padding: 50px 0;
+    padding: 50px 0 70px 0;
   }
   .idea-banner p {
     font-size: 18px;
@@ -698,9 +697,9 @@ input[type="text"]:focus {
   .banner h1 {
     font-size: 40px;
   }
-  .learn-more-btn,
+  .load-more-btn,
   .contact-us-btn {
-    padding: 7px 25px;
+    padding: 10px 30px;
     font-size: 16px;
   }
   .footer {
@@ -746,7 +745,7 @@ input[type="text"]:focus {
     padding: 90px 5% 50px 5%;
   }
   .idea-banner {
-    padding: 30px 0;
+    padding: 30px 0 45px 0;
   }
   .nav {
     padding: 0 5%;
@@ -760,10 +759,10 @@ input[type="text"]:focus {
   .contact {
     padding: 0 30px 0 10%;
   }
-  .learn-more-btn,
+  .load-more-btn,
   .contact-us-btn {
     font-size: 15px !important;
-    padding: 9px 20px;
+    padding: 10px 30px;
   }
   .news h2 {
     margin-top: 40px;
@@ -780,6 +779,9 @@ input[type="text"]:focus {
   }
   .works-content img {
     width: 100%;
+  }
+  .news .card .card-des {
+    min-height: 190px;
   }
 }
 

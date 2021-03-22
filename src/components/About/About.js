@@ -105,10 +105,6 @@ function About() {
                   key={id}
                 >
                   <div className="directors-back">
-                    {/* <div
-                      style={{ backgroundImage: `url(${photo})` }}
-                      className="directors-photo"
-                    ></div> */}
                     <img src={photo} alt={fullName} />
                     <h3>{fullName}</h3>
                     <p>{position}</p>

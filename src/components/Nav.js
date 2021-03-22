@@ -43,7 +43,7 @@ function Nav() {
             </Col>{" "}
             <Col>
               <NavLink to="/contact" activeClassName="nav-active">
-                Contact
+                Contac
               </NavLink>
             </Col>
           </Row>

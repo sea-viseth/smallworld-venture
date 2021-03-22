@@ -33,10 +33,11 @@ function Contact() {
                   <Input.TextArea />
                 </Form.Item>
                 <Form.Item>
+                  <br />
                   <Button
-                    className="submit-btn"
-                    type="primary"
+                    className="sw-default-btn"
                     htmlType="submit"
+                    style={{ padding: "23px 50px" }}
                   >
                     Submit
                   </Button>

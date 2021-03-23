@@ -21,7 +21,7 @@ function Spaces() {
               <img
                 className="img-banner"
                 src="/images/spaces/space-banner.png"
-                alt=""
+                alt="spaces"
               />
             </Col>
           </Row>

@@ -72,7 +72,10 @@ function Contact() {
               </Row>
               <Row align="middle">
                 <Col className="info-icon" flex="35px">
-                  <img src="/images/contact/telegram.png" alt="" />
+                  <img
+                    src="/images/contact/telegram.png"
+                    alt="telegram-community"
+                  />
                 </Col>
                 <Col>
                   <a

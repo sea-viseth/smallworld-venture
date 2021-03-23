@@ -34,14 +34,14 @@ function About() {
           lg={{ span: 12 }}
           span={{ xxl: 14 }}
         >
-          <img src="/images/about/about-banner.png" alt="loading" />
+          <img src="/images/about/about-banner.png" alt="About" />
         </Col>
       </Row>
       {/* portfolios */}
       <div className="container">
         <Row className="portfolios" justify="center" align="middle" gutter={20}>
           <Col span={24} md={{ span: 10 }}>
-            <img src="/images/about/portfolios.png" alt="loading" />
+            <img src="/images/about/portfolios.png" alt="Portfolios" />
           </Col>
           <Col span={24} md={{ span: 11 }}>
             <h2 className="about-title">

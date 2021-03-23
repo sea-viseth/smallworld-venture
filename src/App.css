@@ -662,6 +662,13 @@ input[type="text"]:focus {
   padding: 10px;
   color: #0b0e11;
 }
+.copy-right {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #ffffff;
+}
 
 @media only screen and (max-width: 1440px) {
   .nav {

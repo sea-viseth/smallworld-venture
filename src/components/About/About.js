@@ -1,6 +1,7 @@
 import { Row, Col } from "antd";
 import data from "../../data/directors.json";
 import partners from "../../data/partners.json";
+import startups from "../../data/start-up.json";
 
 function About() {
   return (
@@ -53,30 +54,16 @@ function About() {
             </p>
 
             <Row justify="space-between" align="middle" gutter={[20, 20]}>
-              <Col span={7}>
-                {" "}
-                <img src="/images/about/cg.png" alt="loading" />
-              </Col>
-              <Col span={7}>
-                {" "}
-                <img src="/images/about/ts.png" alt="loading" />
-              </Col>
-              <Col span={7}>
-                {" "}
-                <img src="/images/about/BKB.png" alt="loading" />
-              </Col>
-              <Col span={7}>
-                {" "}
-                <img src="/images/about/sv.png" alt="loading" />
-              </Col>
-              <Col span={7}>
-                {" "}
-                <img src="/images/about/fado.png" alt="loading" />
-              </Col>
-              <Col span={7}>
-                {" "}
-                <img src="/images/about/KOOMPI.png" alt="loading" />
-              </Col>
+              {startups.map((startup) => {
+                return (
+                  <Col span={7}>
+                    <img
+                      src={`/images/about/${startup.logo}`}
+                      alt={startup.name}
+                    />
+                  </Col>
+                );
+              })}
             </Row>
           </Col>
         </Row>

@@ -30,12 +30,12 @@ function News() {
     <div className="container">
       <div className="news">
         <h2 className="about-title">
-          <span>&lt;</span> COMMUNITY UPDATE <span>/&gt;</span>
+          <span>&lt;</span> START-UP NEWS <span>/&gt;</span>
         </h2>
         <p className="p-description">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt
-          sociosqu ullamcorper, class per curabitur natoque orci lobortis
-          commodo varius suscipit.
+          Our ventures are working on exciting projects in various industries!
+          Read our community news to stay updated on their initiatives and
+          milestones!
         </p>
         <Row className="outter-card" gutter={[24, 24]}>
           {community.length === 0 ? (
@@ -62,20 +62,11 @@ function News() {
             })
           )}
         </Row>
-
-        {/* <Button
-          size="large"
-          target="_blank"
-          href="https://medium.com/@smallworldvc"
-          className="sw-default-btn"
-        >
-          Load More
-        </Button> */}
       </div>
 
-      <div className="news">
+      {/* <div className="news">
         <h2 className="about-title">
-          <span>&lt;</span> KOOMPI NEWS <span>/&gt;</span>
+          <span>&lt;</span> STARTUP NEWS <span>/&gt;</span>
         </h2>
         <p className="p-description">
           Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt
@@ -106,9 +97,9 @@ function News() {
               );
             })
           )}
-        </Row>
+        </Row> */}
 
-        {/* <Button
+      {/* <Button
           size="large"
           target="_blank"
           href="https://medium.com/@koompi"
@@ -116,7 +107,7 @@ function News() {
         >
           Load More
         </Button> */}
-      </div>
+      {/* </div> */}
     </div>
   );
 }

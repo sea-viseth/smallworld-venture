@@ -1,39 +1,76 @@
-import { Row, Col } from "antd";
-import Link from "next/link";
+import React from "react";
+import {
+  FaFacebookF,
+  FaTelegramPlane,
+  FaTwitter,
+  FaMediumM,
+} from "react-icons/fa";
+
 function Footer() {
   return (
-    <div className="footer">
-      <Row justify="space-between">
-        <Col className="footer-menu">
-          <Link href="/about">About</Link>
-          <Link href="/works">Works</Link>
-          <Link href="/news">News</Link>
-          <Link href="/contact">Contact</Link>
-        </Col>
-        <Col className="footer-menu right-footer">
-          <a href="https://t.me/smallworldventure">
-            <img src="/images/telegram.svg" alt="telegram" />
-            <span> Telegram</span>
-          </a>
-          <a
-            style={{ margin: "22px 0" }}
-            href="https://web.facebook.com/smallworldventure/?_rdc=1&_rdr"
-          >
-            <img src="/images/facebook.svg" alt="facebook" />
-            <span> Facebook</span>
-          </a>
-          <a href="https://twitter.com/smallworldvc">
-            <img src="/images/twitter.svg" alt="twitter" />
-            <span> Twitter</span>
-          </a>
+    <React.Fragment>
+      <div className="footer">
+        <center>
           <img
             style={{ width: "170px", marginTop: "20px" }}
-            src="/images/sw-gray.png"
+            src="/images/sw-white.png"
             alt="smallworld-logo"
           />
-        </Col>
-      </Row>
-    </div>
+          <div className="footer-menu">
+            <a
+              href="https://t.me/smallworldventure"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div>
+                <FaTelegramPlane />
+              </div>
+            </a>
+            <a
+              href="https://web.facebook.com/smallworldventure/?_rdc=1&_rdr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div>
+                <FaFacebookF />
+              </div>
+            </a>
+            <a
+              href="https://twitter.com/smallworldvc"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div>
+                <FaTwitter />
+              </div>
+            </a>
+            <a
+              href="https://medium.com/smallworldvc"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div>
+                <FaMediumM />
+              </div>
+            </a>
+          </div>
+        </center>
+      </div>
+      <div className="copy-right">
+        Copyright © SmallWorld Venture, a Member of{" "}
+        <span>
+          <b>
+            <a
+              href="https://www.isigroup.com.kh/#1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ISIGROUP
+            </a>
+          </b>
+        </span>
+      </div>
+    </React.Fragment>
   );
 }
 

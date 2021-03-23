@@ -33,7 +33,7 @@ h3 {
 }
 .container {
   width: 75% !important;
-  margin: 0px auto;
+  margin: 0px auto !important;
 }
 /* navbar */
 .nav {
@@ -50,18 +50,16 @@ h3 {
   background-color: rgb(1, 94, 152);
 } */
 .nav img {
-  width: 130px;
+  width: 130px !important;
 }
 .ant-col {
   z-index: 1;
 }
-
 .nav a {
   color: white;
   font-weight: 700;
   z-index: 2;
 }
-
 .open-menu-btn {
   color: white;
   font-size: 25px;
@@ -77,24 +75,10 @@ h3 {
 .ant-menu-item-selected a:hover {
   color: #015e98;
 }
-@media only screen and (max-width: 1250px) {
-  .nav-menu {
-    display: none;
-  }
-  .nav {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  .open-menu-btn {
-    display: block;
-  }
-  .ant-drawer-body {
-    padding: 0;
-  }
-  /* a {
+@media only screen and (max-width: 900px) {
+  a {
     font-size: 18px !important;
-  } */
+  }
 }
 /* home */
 .home {
@@ -152,7 +136,7 @@ h3 {
   color: #015e98 !important;
 }
 .outter-card-box {
-  margin: 80px 0px;
+  margin: 80px 0px !important;
 }
 .card-box-info {
   height: 100%;
@@ -179,7 +163,7 @@ h3 {
 .idea-banner {
   background-image: url(/images/idea-banner.png);
   background-position: center;
-  padding: 100px 0px;
+  padding: 100px 0px 120px 0;
 }
 .idea-banner h1,
 .idea-banner p {
@@ -192,6 +176,9 @@ h3 {
 .idea-banner h1 {
   font-size: 32px;
   font-weight: 800;
+}
+.send-us-message {
+  margin-bottom: 30px;
 }
 .sw-default-btn {
   border: none;
@@ -207,6 +194,7 @@ h3 {
   position: relative;
   top: 0px;
 }
+
 .sw-default-btn:hover {
   box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
   top: -3px;
@@ -289,7 +277,6 @@ h3 {
   width: 100%;
   background-position: center;
   background-size: cover;
-
   border-radius: 8px;
 } */
 
@@ -318,7 +305,7 @@ h3 {
 
 /* works */
 .works-content {
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 .works-content p {
@@ -332,6 +319,9 @@ h3 {
   text-align: center;
 }
 @media only screen and (max-width: 768px) {
+  .works-content {
+    margin: 40px 0;
+  }
   .works-content img {
     margin-top: 30px;
     width: 60%;
@@ -373,19 +363,18 @@ h3 {
   margin-bottom: 60px;
 }
 .outter-card {
-  margin: 40px 0;
+  margin: 40px 0 !important;
 }
 .news .card {
   background-color: white;
   text-align: left;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  position: relative;
-  top: 0px;
   transition: 0.3s;
   border-radius: 8px;
+  height: 100% !important;
 }
 .news .card:hover {
-  top: -5px;
+  transform: translateY(-5px);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .news .card img {
@@ -395,13 +384,16 @@ h3 {
 }
 .news .card .card-des {
   padding: 20px 20px;
-  min-height: 220px;
-  position: relative;
-}
-.card-des .card-desc {
+  /* min-height: 230px;
+  position: relative; */
   font-size: 16px !important;
   color: #333;
 }
+.news .card .card-des .card-desc {
+  min-height: 120px;
+  position: relative;
+}
+
 .news .card .card-des .name-badge {
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -418,15 +410,6 @@ h3 {
   position: absolute;
   bottom: 10px;
 }
-.load-more-btn {
-  background-color: #94bbd4;
-  color: #1e70bf;
-  font-weight: 700;
-  border-radius: 20px;
-  padding: 0 60px;
-  border: none;
-}
-
 .ant-btn:hover,
 .ant-btn:focus,
 .ant-btn:active {
@@ -493,9 +476,11 @@ img {
   color: #015e98;
   line-height: 1.3em;
   margin-bottom: 50px;
+  font-weight: 800;
 }
 .spaces h2 {
-  font-size: 35px;
+  font-size: 28px;
+  font-weight: 800;
 }
 .spaces p {
   color: rgba(0, 0, 0, 0.87);
@@ -541,6 +526,7 @@ img {
 }
 .contact-location h2 {
   margin: 30px 0;
+  font-weight: 800;
 }
 .contact-location h3 {
   font-weight: 700;
@@ -554,7 +540,7 @@ img {
   line-height: 20px;
 }
 .contact {
-  padding: 0 30px 0 20%;
+  padding: 0 30px 0 13%;
 }
 .contact p {
   font-size: 16px !important;
@@ -565,6 +551,10 @@ img {
 /* contact page */
 .contact-page {
   margin: 60px 0;
+}
+.contact-page .ant-col h2 {
+  font-weight: 800;
+  font-size: 32px;
 }
 .contact-page label {
   color: #95a5a6;
@@ -616,7 +606,8 @@ input[type="text"]:focus {
   color: white;
 }
 .smallworld .info {
-  padding: 0 5%;
+  padding-left: 13%;
+  padding-right: 50px;
 }
 .smallworld h2 {
   color: white;
@@ -627,20 +618,18 @@ input[type="text"]:focus {
 
 /* footer */
 .footer {
-  padding: 60px 15%;
+  padding: 40px 15%;
   background-color: #0b0e11;
+}
+.footer .footer-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 .footer a {
   color: #95a5a6;
   font-size: 20px;
   margin: 7px 0;
-}
-.footer .footer-menu {
-  display: flex;
-  flex-direction: column;
-}
-.footer .right-footer {
-  margin-top: 5px;
 }
 .footer .footer-menu img {
   width: 30px;
@@ -648,6 +637,23 @@ input[type="text"]:focus {
 }
 .footer .footer-menu span {
   margin-left: 20px;
+}
+
+.footer-menu a div svg {
+  background-color: #f5f5f5;
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+  margin-left: 15px;
+  padding: 10px;
+  color: #0b0e11;
+}
+.copy-right {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #ffffff;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -676,7 +682,7 @@ input[type="text"]:focus {
     visibility: visible;
   }
   .idea-banner {
-    padding: 50px 0;
+    padding: 50px 0 70px 0;
   }
   .idea-banner p {
     font-size: 18px;
@@ -684,9 +690,9 @@ input[type="text"]:focus {
   .banner h1 {
     font-size: 40px;
   }
-  .learn-more-btn,
+  .load-more-btn,
   .contact-us-btn {
-    padding: 7px 25px;
+    padding: 10px 30px;
     font-size: 16px;
   }
   .footer {
@@ -707,8 +713,25 @@ input[type="text"]:focus {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .open-menu-btn {
+    display: block;
+  }
+  .ant-drawer-body {
+    padding: 0;
+  }
   .directors img {
     width: 60%;
+  }
+  .p-description {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -729,7 +752,7 @@ input[type="text"]:focus {
     padding: 90px 5% 50px 5%;
   }
   .idea-banner {
-    padding: 30px 0;
+    padding: 30px 0 45px 0;
   }
   .nav {
     padding: 0 5%;
@@ -743,10 +766,10 @@ input[type="text"]:focus {
   .contact {
     padding: 0 30px 0 10%;
   }
-  .learn-more-btn,
+  .load-more-btn,
   .contact-us-btn {
     font-size: 15px !important;
-    padding: 9px 20px;
+    padding: 10px 30px;
   }
   .news h2 {
     margin-top: 40px;
@@ -763,6 +786,9 @@ input[type="text"]:focus {
   }
   .works-content img {
     width: 100%;
+  }
+  .news .card .card-des {
+    min-height: 190px;
   }
 }
 
@@ -795,6 +821,9 @@ input[type="text"]:focus {
   }
   .spaces {
     margin: 30px 0;
+  }
+  .outter-card-box {
+    margin: 40px 0px !important;
   }
 }
 @media only screen and (max-width: 500px) {

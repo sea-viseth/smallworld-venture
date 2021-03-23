@@ -24,7 +24,6 @@ function Home() {
         "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/smallworldvc"
       )
       .then((res) => {
-        console.log(res.data);
         setCommunity(res.data.items);
       });
   }, []);
@@ -57,7 +56,7 @@ function Home() {
               </p>
             </Col>
             <Col>
-              <a className="sw-default-btn" href="/about">
+              <a className="sw-default-btn load-more-btn" href="/about">
                 LEARN MORE
               </a>
             </Col>
@@ -106,7 +105,7 @@ function Home() {
       <div className="idea-banner">
         <div className="container">
           <Row>
-            <Col md={{ span: 16 }} xl={{ span: 12 }}>
+            <Col md={16} xl={13} xxl={12}>
               <h1>
                 <span>&lt;</span> Have some ideas for new venture?{" "}
                 <span>/&gt;</span>
@@ -123,8 +122,8 @@ function Home() {
                 We're open to discussing your own startup ideas, however
                 unconventional, regardless of age, gender, or nationality.
               </p>
-              <p>Send us a message!</p>
-              <a href="/contact" className="sw-default-btn">
+              <p className="send-us-message">Send us a message!</p>
+              <a href="/contact" className="sw-default-btn contact-us-btn">
                 CONTACT US
               </a>
             </Col>
@@ -136,13 +135,13 @@ function Home() {
           <br />
           <h2>
             <span>&lt; </span>
-            COMMUNITY NEWS
+            START-UP NEWS
             <span> /&gt;</span>
           </h2>
           <p className="p-description">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt
-            sociosqu ullamcorper, class per curabitur natoque orci lobortis
-            commodo varius suscipit.
+            Our ventures are working on exciting projects in various industries!
+            Read our community news to stay updated on their initiatives and
+            milestones!
           </p>
           <Row className="outter-card" gutter={[24, 24]}>
             {community.length === 0 ? (
@@ -182,8 +181,8 @@ function Home() {
           </Link>
 
           <br />
-          <h2 className="about-title">
-            <span>&lt;</span> KOOMPI NEWS <span>/&gt;</span>
+          {/* <h2 className="about-title">
+            <span>&lt;</span> Startup News <span>/&gt;</span>
           </h2>
           <p className="p-description">
             Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt
@@ -215,11 +214,11 @@ function Home() {
               })
             )}
           </Row>
-          <Link href="/news">
+          <Link to="/news">
             <Button size="large" className="sw-default-btn">
               Load More
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

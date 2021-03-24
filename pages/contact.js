@@ -1,11 +1,25 @@
-import { Row, Col, Form, Input, Button } from "antd";
+import { Row, Col, Form, Input, Button, notification } from "antd";
+import axios from "axios";
+import { useState } from "react";
+import { FaTelegramPlane, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+
 function Contact() {
+  const [isLoading, setIsLoading] = useState(false);
   const layout = {
     labelCol: { span: 24 },
     wrapperCol: { span: 24 },
   };
   const onFinish = (values) => {
-    console.log("Success:", values);
+    axios
+      .post("https://mail.smallworldventure.com/api/form", { ...values })
+      .then(() => {
+        setIsLoading(true);
+        notification["success"]({
+          message: "Success",
+          description: "Thank you for reaching out. Please check your email.",
+        });
+        setIsLoading(false);
+      });
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -23,13 +37,42 @@ function Contact() {
                 onFinish={onFinish}
                 onFinishFailed={onFinishFailed}
               >
-                <Form.Item name="name" label="Full Name">
+                <Form.Item
+                  name="fullname"
+                  label="Full Name"
+                  rules={[
+                    { required: true, message: "Please input your fullname!" },
+                  ]}
+                >
                   <Input />
                 </Form.Item>
-                <Form.Item name="email" label="Email">
+                <Form.Item
+                  name="email"
+                  label="Email"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Please input your email!",
+                    },
+                    { type: "email", message: "The email is not valid!" },
+                  ]}
+                >
                   <Input />
                 </Form.Item>
-                <Form.Item name="message" label="Message">
+                <Form.Item
+                  name="message"
+                  label="Message"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Please input your message!",
+                    },
+                    {
+                      min: 50,
+                      message: "Make sure your message more than 50 characters",
+                    },
+                  ]}
+                >
                   <Input.TextArea />
                 </Form.Item>
                 <Form.Item>
@@ -37,7 +80,8 @@ function Contact() {
                   <Button
                     className="sw-default-btn"
                     htmlType="submit"
-                    style={{ padding: "20px 40px" }}
+                    style={{ padding: "20px 60px" }}
+                    loading={isLoading ? true : false}
                   >
                     Submit
                   </Button>
@@ -46,11 +90,9 @@ function Contact() {
             </Col>
             <Col className="office-info" xs={24} sm={24} md={12}>
               <h2>Our Office</h2>
-              <Row align="middle">
-                <Col className="info-icon" flex="40px">
-                  <img src="/images/contact/address.png" alt="adress" />
-                </Col>
-                <Col span={18}>
+              <div className="contact-icons">
+                <div>
+                  <FaMapMarkerAlt />
                   <a
                     target="_blank"
                     href="https://goo.gl/maps/9qBKccPdT81iKQYa9"
@@ -58,35 +100,25 @@ function Contact() {
                   >
                     #92 E1K, St.19m Doun Penh, Phnom Penh, Cambodia
                   </a>
-                </Col>
-              </Row>
-              <Row align="middle">
-                <Col className="info-icon" flex="35px">
-                  <img src="/images/contact/email.png" alt="email" />
-                </Col>
-                <Col>
+                </div>
+                <div>
+                  <FaEnvelope />
                   <a href="mailto:smallworldventure@gmail.com">
                     smallworldventure@gmail.com
                   </a>
-                </Col>
-              </Row>
-              <Row align="middle">
-                <Col className="info-icon" flex="35px">
-                  <img
-                    src="/images/contact/telegram.png"
-                    alt="telegram-community"
-                  />
-                </Col>
-                <Col>
+                </div>
+
+                <div>
+                  <FaTelegramPlane />
                   <a
                     rel="noreferrer"
                     target="_blank"
                     href="https://t.me/smallworldventure"
                   >
-                    t.me/smallworldventure
+                    https://t.me/smallworldventure
                   </a>
-                </Col>
-              </Row>
+                </div>
+              </div>
             </Col>
           </Row>
         </div>

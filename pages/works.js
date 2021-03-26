@@ -44,7 +44,7 @@ function Works() {
   return (
     <div className="container">
       {content.map((res, index) => {
-        return <Content content={content[index]} />;
+        return <Content key={index} content={content[index]} />;
       })}
     </div>
   );

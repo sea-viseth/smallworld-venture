@@ -35,6 +35,10 @@ h3 {
   width: 75% !important;
   margin: 0px auto !important;
 }
+h2 span {
+  color: #cfcfcf;
+  font-weight: 900 !important;
+}
 /* navbar */
 .nav {
   padding: 0 12.5%;
@@ -104,7 +108,6 @@ h3 {
   top: 140px;
   position: absolute;
 }
-
 .banner h1,
 .banner p {
   color: white;
@@ -305,7 +308,7 @@ h3 {
 
 /* works */
 .works-content {
-  margin: 100px 0;
+  margin: 60px 0;
 }
 
 .works-content p {
@@ -615,7 +618,108 @@ input[type="text"]:focus {
 .smallworld p {
   font-size: 18px !important;
 }
+/* open-opportunities */
+.open-banner {
+  position: unset;
+  margin-top: -80px;
+  padding: 100px 12.5% 50px 12.5%;
+  background-color: #053f64;
+}
 
+.open h2 {
+  font-weight: 900;
+  /* text-align: center; */
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.open-banner h1,
+.open-banner p {
+  color: white;
+}
+.open-banner h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 800;
+}
+.open-banner h1 span:first-child {
+  margin-right: 10px;
+  color: #fcc400;
+}
+.open-banner h1 span:nth-child(2) {
+  color: #fcc400;
+  margin-left: 10px;
+}
+.open .value {
+  background: linear-gradient(180deg, #fce34b, #eac101) !important;
+  padding: 3px 20px;
+  border-radius: 40px;
+  color: #444 !important;
+}
+.about-smallworld p {
+  font-size: 18px;
+  color: #919090;
+}
+.employees-brands {
+  background-color: #053f64;
+  border-radius: 40px;
+  width: 259px;
+  padding: 20px 30px;
+  margin: 20px 0;
+}
+.employees-brands h1 {
+  color: white;
+  margin: 0;
+}
+.employees-brands h1:nth-child(2) {
+  color: #fcc400;
+}
+.work-with-us {
+  background-color: #053f64;
+  padding: 20px 50px;
+  border-radius: 40px;
+}
+.work-with-us h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.work-with-us h3,
+.work-with-us p {
+  color: white;
+}
+.center {
+  text-align: center;
+  margin: 40px 0 !important;
+}
+.recruit-card {
+  padding: 30px;
+  background-color: #fcfcfc;
+  height: 100%;
+
+  box-shadow: 0 0 5px 0.5px rgb(236, 236, 236);
+  border-radius: 21px;
+}
+.recruit-card p span {
+  line-height: 40px;
+  color: #053f64;
+  font-weight: 700;
+}
+.company {
+  background-color: #fcfcfc;
+  padding: 10px 0;
+  /* width: 261px; */
+  box-shadow: 0 0 5px 0.5px rgb(236, 236, 236);
+  /* height: 70px; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.company img {
+  width: 90% !important;
+  user-select: none;
+}
 /* footer */
 .footer {
   padding: 40px 15%;
@@ -722,29 +826,17 @@ input[type="text"]:focus {
   .spaces p {
     font-size: 18px !important;
   }
-}
-@media only screen and (max-width: 1200px) {
-  .nav-menu {
-    display: none;
+  .open-banner {
+    position: unset;
+    margin-top: -80px;
+    padding: 100px 10% 50px 10%;
+    background-color: #053f64;
   }
-  .nav {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  .open-menu-btn {
-    display: block;
-  }
-  .ant-drawer-body {
-    padding: 0;
-  }
-  .directors img {
-    width: 60%;
-  }
-  .p-description {
-    width: 100%;
+  .open-banner h1 {
+    font-size: 40px;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   .board-director .container p:nth-child(2) {
     padding: 0;
@@ -782,6 +874,29 @@ input[type="text"]:focus {
   .news h2 {
     margin-top: 40px;
     margin-bottom: 20px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .open-menu-btn {
+    display: block;
+  }
+  .ant-drawer-body {
+    padding: 0;
+  }
+  .directors img {
+    width: 60%;
+  }
+  .p-description {
+    width: 100%;
+  }
+  .open-banner {
+    padding: 90px 5% 50px 5%;
   }
 }
 

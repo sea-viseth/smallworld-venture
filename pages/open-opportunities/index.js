@@ -48,24 +48,24 @@ function index() {
   const companies = [
     {
       logo: "/images/open-opportunities/koompi.png",
-      name: "Koompi",
+      name: "koompi",
     },
     {
       logo: "/images/open-opportunities/grood.png",
-      name: "Grood",
+      name: "grood",
     },
 
     {
       logo: "/images/open-opportunities/selendra.png",
-      name: "Selendra",
+      name: "selendra",
     },
     {
-      logo: "/images/open-opportunities/va.png",
-      name: "Vitaminair",
+      logo: "/images/open-opportunities/va1.png",
+      name: "vitaminair",
     },
     {
       logo: "/images/open-opportunities/selendra.png",
-      name: "Selendra",
+      name: "selendra",
     },
   ];
   return (
@@ -205,9 +205,11 @@ function index() {
         >
           {companies.map((com, i) => (
             <Col key={i} xl={4}>
-              <div>
-                <img src={com.logo} alt={com.name} />
-              </div>
+              <Link href={`/open-opportunities/koompi`}>
+                <div className="brand">
+                  <img src={com.logo} alt={com.name} />
+                </div>
+              </Link>
             </Col>
           ))}
         </Row>

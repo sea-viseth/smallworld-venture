@@ -681,8 +681,8 @@ input[type="text"]:focus {
 .work-with-us h3 {
   font-size: 25px;
   font-weight: 700;
+  color: #fcc400;
 }
-.work-with-us h3,
 .work-with-us p {
   color: white;
 }
@@ -719,6 +719,66 @@ input[type="text"]:focus {
 .company img {
   width: 90% !important;
   user-select: none;
+}
+.company .brand {
+  transition: 300ms;
+}
+.company .brand:hover {
+  border-radius: 20px;
+  box-shadow: 0 0 5px 0.5px rgb(236, 236, 236);
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+/* company detail */
+.com-detail {
+  margin: 45px 0;
+}
+.com-detail h1 {
+  margin: 0;
+  font-weight: 800;
+  color: #015e98;
+}
+.com-detail h2 {
+  font-weight: 900;
+}
+.com-detail p:nth-child(2) {
+  font-weight: 700;
+  color: #919090;
+  line-height: 25px;
+}
+.com-detail p:nth-child(3) {
+  font-size: 20px !important;
+  /* color: #919090; */
+}
+.com-detail h1 span:first-child {
+  margin-right: 10px;
+  color: #fcc400;
+}
+.com-detail h1 span:nth-child(2) {
+  color: #fcc400;
+  margin-left: 10px;
+}
+.line {
+  width: 150px;
+  height: 8px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #fce34b, #eac101) !important;
+}
+.team {
+  background-color: #fcfcfc;
+  padding: 15px 30px;
+  /* width: 350px; */
+  border-radius: 20px;
+  box-shadow: 0 0 5px 0.5px rgb(236, 236, 236);
+  display: flex;
+  align-items: center;
+}
+.team h3 {
+  margin: 0;
+  margin-left: 20px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
 }
 /* footer */
 .footer {

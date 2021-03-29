@@ -21,6 +21,7 @@ function Footer() {
               href="https://t.me/smallworldventure"
               target="_blank"
               rel="noreferrer"
+              title="Telegram Community"
             >
               <div>
                 <FaTelegramPlane />
@@ -30,6 +31,7 @@ function Footer() {
               href="https://web.facebook.com/smallworldventure/?_rdc=1&_rdr"
               target="_blank"
               rel="noreferrer"
+              title="Facebook"
             >
               <div>
                 <FaFacebookF />
@@ -39,6 +41,7 @@ function Footer() {
               href="https://twitter.com/smallworldvc"
               target="_blank"
               rel="noreferrer"
+              title="Twitter"
             >
               <div>
                 <FaTwitter />
@@ -48,6 +51,7 @@ function Footer() {
               href="https://medium.com/smallworldvc"
               target="_blank"
               rel="noreferrer"
+              title="Medium"
             >
               <div>
                 <FaMediumM />

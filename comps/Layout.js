@@ -11,6 +11,11 @@ function Layout({ children }) {
   return (
     <>
       <Head>
+        <meta
+          name="description"
+          content="Founded in 2011 as SmallWorld Cambodia, we created a shared professional workspace where progressive young business minds could explore and pursue their aspirations while transforming ideas into reality."
+        />
+        <meta name="keyword" content="Startup Community" />
         <title>
           {`${
             path === "" ? "Smallworldventure" : "Smallworldventure | " + path

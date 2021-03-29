@@ -70,36 +70,40 @@ function index() {
   ];
   return (
     <div className="open">
-      <Row align="middle" justify="space-between" className="open-banner">
-        <Col xl={14}>
-          <Row gutter={[0, 20]}>
-            <Col>
-              <h1>
-                <span>&lt;</span>
-                Open-Opportunities
-                <span>/&gt;</span>
-              </h1>
+      <div className="open-banner">
+        <div className="container">
+          <Row align="middle" justify="space-between">
+            <Col xl={14}>
+              <Row gutter={[0, 20]}>
+                <Col>
+                  <h1>
+                    <span>&lt;</span>
+                    Open-Opportunities
+                    <span>/&gt;</span>
+                  </h1>
+                </Col>
+                <Col>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    dictum suscipit quis lectus quam elementum volutpat. Ac
+                    potenti ameutpat. Ac potenti amet, cras magna. Lacus amet
+                    consectetur condimentum turpis sed sed at commodo.{" "}
+                  </p>
+                </Col>
+                <Col>
+                  <a className="sw-default-btn load-more-btn">View Oppening</a>
+                </Col>
+              </Row>
             </Col>
-            <Col>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                dictum suscipit quis lectus quam elementum volutpat. Ac potenti
-                ameutpat. Ac potenti amet, cras magna. Lacus amet consectetur
-                condimentum turpis sed sed at commodo.{" "}
-              </p>
-            </Col>
-            <Col>
-              <a className="sw-default-btn load-more-btn">View Oppening</a>
+            <Col xs={0} sm={0} xl={5}>
+              <img
+                src="/images/open-opportunities/banner-image.svg"
+                alt="team work"
+              />
             </Col>
           </Row>
-        </Col>
-        <Col xs={0} sm={0} xl={5}>
-          <img
-            src="/images/open-opportunities/banner-image.svg"
-            alt="team work"
-          />
-        </Col>
-      </Row>
+        </div>
+      </div>
       <div className="about-smallworld container">
         <h2>
           <span>&lt; </span>

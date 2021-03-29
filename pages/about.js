@@ -7,7 +7,7 @@ function About() {
   return (
     <>
       <div className="about">
-        <Row className="about-info " align="middle" justify="space-between">
+        <Row className="about-info" align="middle" justify="space-between">
           <Col md={{ span: 24 }} lg={{ span: 11 }} span={{ xxl: 8 }}>
             <h1>
               <span>&lt;</span> What is SmallWorld? <span>/&gt;</span>

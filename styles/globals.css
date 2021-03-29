@@ -41,7 +41,7 @@ h2 span {
 }
 /* navbar */
 .nav {
-  padding: 0 12.5%;
+  /* padding: 0 12.5%; */
   background-color: rgb(1, 94, 152);
 }
 /* .nav::before {
@@ -104,7 +104,6 @@ h2 span {
   z-index: 2 !important;
 }
 .banner {
-  padding: 0 12.5%;
   top: 140px;
   position: absolute;
 }
@@ -622,7 +621,7 @@ input[type="text"]:focus {
 .open-banner {
   position: unset;
   margin-top: -80px;
-  padding: 100px 12.5% 50px 12.5%;
+  padding: 100px 0 50px 0;
   background-color: #053f64;
 }
 
@@ -832,9 +831,6 @@ input[type="text"]:focus {
 }
 
 @media only screen and (max-width: 1440px) {
-  .nav {
-    padding: 0 10%;
-  }
   .container {
     width: 90% !important;
     margin: 0 auto;
@@ -850,7 +846,7 @@ input[type="text"]:focus {
   .banner {
     position: unset;
     margin-top: -80px;
-    padding: 100px 10% 50px 10%;
+    padding: 100px 0 50px 0;
     background-color: #053f64;
   }
   .space-ship {
@@ -889,7 +885,7 @@ input[type="text"]:focus {
   .open-banner {
     position: unset;
     margin-top: -80px;
-    padding: 100px 10% 50px 10%;
+    padding: 100px 0 50px 0;
     background-color: #053f64;
   }
   .open-banner h1 {
@@ -909,14 +905,12 @@ input[type="text"]:focus {
     margin: 0 auto;
   }
   .banner {
-    padding: 90px 5% 50px 5%;
+    padding: 90px 0 50px 0;
   }
   .idea-banner {
     padding: 30px 0 45px 0;
   }
-  .nav {
-    padding: 0 5%;
-  }
+
   h2 {
     font-size: 24px !important;
   }
@@ -956,7 +950,7 @@ input[type="text"]:focus {
     width: 100%;
   }
   .open-banner {
-    padding: 90px 5% 50px 5%;
+    padding: 90px 0 50px 0;
   }
 }
 

@@ -36,46 +36,53 @@ function Home() {
       </Head> */}
       <div className="home">
         <div className="big-header"></div>
-        <Row justify="space-between" className="banner">
-          <Col xs={24} sm={24} xl={14} xxl={10}>
-            <Row gutter={[0, 20]}>
-              <Col>
-                <h1>
-                  <span>&lt;</span>
-                  Homegrown Startup Community
-                  <span>/&gt;</span>
-                </h1>
+        <div className="banner">
+          {" "}
+          <div className="container">
+            <Row justify="space-between">
+              <Col xs={24} sm={24} xl={14} xxl={10}>
+                <Row gutter={[0, 20]}>
+                  <Col>
+                    <h1>
+                      <span>&lt;</span>
+                      Homegrown Startup Community
+                      <span>/&gt;</span>
+                    </h1>
+                  </Col>
+                  <Col>
+                    <p>
+                      We began in 2011 by providing a collaborative workspace
+                      environment for entrepreneurs, and then quickly moved
+                      forward raising investment capital to fund new startup
+                      projects.
+                    </p>
+                  </Col>
+                  <Col>
+                    <p>
+                      With a variety of research and development projects in
+                      motion today, we're involved in startup venture building
+                      through community supported seed equity investments,
+                      together with rural ecovillage development and long-term
+                      land management.
+                    </p>
+                  </Col>
+                  <Col>
+                    <a className="sw-default-btn load-more-btn" href="/about">
+                      LEARN MORE
+                    </a>
+                  </Col>
+                </Row>
               </Col>
-              <Col>
-                <p>
-                  We began in 2011 by providing a collaborative workspace
-                  environment for entrepreneurs, and then quickly moved forward
-                  raising investment capital to fund new startup projects.
-                </p>
+              <Col xs={0} sm={0} xl={8} xxl={0}>
+                <img
+                  className="space-ship"
+                  src="/images/spaceship.png"
+                  alt="space-ship"
+                />
               </Col>
-              <Col>
-                <p>
-                  With a variety of research and development projects in motion
-                  today, we're involved in startup venture building through
-                  community supported seed equity investments, together with
-                  rural ecovillage development and long-term land management.
-                </p>
-              </Col>
-              <Col>
-                <a className="sw-default-btn load-more-btn" href="/about">
-                  LEARN MORE
-                </a>
-              </Col>
-            </Row>
-          </Col>
-          <Col xs={0} sm={0} xl={10} xxl={0}>
-            <img
-              className="space-ship"
-              src="/images/spaceship.png"
-              alt="space-ship"
-            />
-          </Col>
-        </Row>
+            </Row>{" "}
+          </div>
+        </div>
         <div className="container ">
           <Row className="outter-card-box" gutter={[24, 24]}>
             <Col md={12} xl={6}>

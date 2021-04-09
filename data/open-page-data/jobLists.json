@@ -1,0 +1,254 @@
+[
+  {
+    "id": "web-developer",
+    "department": "WEB DEVELOPER",
+    "icon": "/images/open-opportunities/developer.svg",
+    "lists": [
+      {
+        "id": 1,
+        "company": "Koompi",
+        "position": "Front-End Developer",
+        "status": true,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      },
+      {
+        "id": 2,
+        "company": "Selendra",
+        "position": "Full-Stack Developer",
+        "status": true,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      },
+      {
+        "id": 3,
+        "company": "Koompi",
+        "position": "Backend Developer",
+        "status": false,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      },
+      {
+        "id": 4,
+        "company": "Vitaminair",
+        "position": "Backend Developer",
+        "status": false,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "account",
+    "department": "ACCOUNT",
+    "icon": "/images/open-opportunities/developer.svg",
+    "lists": [
+      {
+        "id": 5,
+        "company": "Koompi",
+        "position": "Sale",
+        "status": true,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      },
+      {
+        "id": 6,
+        "company": "Selendra",
+        "position": "Something",
+        "status": false,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      },
+      {
+        "id": 7,
+        "company": "Koompi",
+        "position": "Communication",
+        "status": false,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mobile-devloper",
+    "department": "MOBILE APP DEVELOPER",
+    "icon": "/images/open-opportunities/developer.svg",
+    "lists": [
+      {
+        "id": 8,
+        "company": "Koompi",
+        "position": "IOS Developer",
+        "status": true,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      },
+      {
+        "id": 9,
+        "company": "Selendra",
+        "position": "Andriod Developer",
+        "status": true,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      },
+      {
+        "id": 10,
+        "company": "Grood",
+        "position": "Andriod Developer",
+        "status": true,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      },
+      {
+        "id": 10,
+        "company": "Smallworld",
+        "position": "IOS Developer",
+        "status": true,
+        "responsibilities": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "requirements": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ],
+        "conditions": [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem earum eveniet, animi facilis quas. Veritatis asperiores dolore perspiciatis necessitatibus iste ratione quaerat"
+        ]
+      }
+    ]
+  }
+]

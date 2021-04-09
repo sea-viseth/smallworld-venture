@@ -17,10 +17,10 @@ function Navbar() {
   return (
     <div className="nav">
       <div className="container">
-        <Row align="middle" justify="space-between">
+        <Row align="middle" justify="space-between" className="logo">
           <Col className="nav-logo">
             <Link href="/">
-              <img src="/images/sw-white.png" alt="logo" />
+              <img src="/images/sw-white.png" alt="Smallworld Venture Logo" />
             </Link>
           </Col>
           <Col className="nav-menu">
@@ -92,8 +92,8 @@ function Navbar() {
             onClose={onClose}
             visible={visible}
           >
-            <div className="nav">
-              <img src="/images/sw-white.png" alt="" />
+            <div className="nav logo">
+              <img src="/images/sw-white.png" alt="Smallworld Venture Logo" />
             </div>
             <Menu className="side-nav">
               <Menu.Item onClick={onClose}>

@@ -60,12 +60,12 @@ function About() {
               </p>
 
               <Row justify="space-between" align="middle" gutter={[20, 20]}>
-                {startups.map((startup) => {
+                {startups.map((startup, i) => {
                   return (
-                    <Col span={7}>
+                    <Col key={i} span={7}>
                       <img
                         src={`/images/about/${startup.logo}`}
-                        alt={startup.name}
+                        alt={`${startup.name} logo`}
                       />
                     </Col>
                   );
@@ -127,7 +127,11 @@ function About() {
                   const { photo, name, id } = partner;
                   return (
                     <Col xs={8} sm={8} md={6} key={id}>
-                      <img src={photo} alt={name} className="img-responsive" />
+                      <img
+                        src={photo}
+                        alt={`${name} logo`}
+                        className="img-responsive"
+                      />
                     </Col>
                   );
                 })}

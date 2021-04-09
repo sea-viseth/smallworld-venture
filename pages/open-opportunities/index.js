@@ -1,73 +1,16 @@
 import { Row, Col } from "antd";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import companies from "../../data/open-page-data/companies.json";
+import values from "../../data/open-page-data/values.json";
+import workWithUs from "../../data/open-page-data/workWithUs.json";
+import recruiting from "../../data/open-page-data/recruiting.json";
+import jobLists from "../../data/open-page-data/jobLists.json";
 function index() {
-  const values = [
-    "Be real and authentic",
-    "Always do your best",
-    "Stop trying to please others",
-    "Don't define yourself at your worst",
-    "Speak your mind directly, not through others",
-    "Don't gossip or show malice",
-    "Work as if your life depends on it",
-    "See yourself as a company owner",
-  ];
-  const workWithUs = [
-    {
-      id: 1,
-      title: "Meaningful Work",
-      img: "/images/open-opportunities/work.svg",
-      des:
-        "Our goal is to have fun, experiment, create, to do exceptional work, build the best products, give proper attention to detail, treat people right, tell the truth.",
-      imgOrder: 1,
-      desOrder: 2,
-    },
-    {
-      id: 2,
-      title: "Good People",
-      img: "/images/open-opportunities/work.svg",
-      des:
-        "Our goal is to have fun, experiment, create, to do exceptional work, build the best products, give proper attention to detail, treat people right, tell the truth.",
-      imgOrder: 2,
-      desOrder: 1,
-    },
-    {
-      id: 3,
-      title: "Something",
-      img: "/images/open-opportunities/work.svg",
-      des:
-        "Our goal is to have fun, experiment, create, to do exceptional work, build the best products, give proper attention to detail, treat people right, tell the truth.",
-      imgOrder: 1,
-      desOrder: 2,
-    },
-  ];
-  const recruiting = [
-    "New team members are recruited through a trial apprenticeship program where the office is open to hangout, meet with different team members, and to test the general atmosphere. We only hire those who show strong motivation to collaborate with a team, or wish to build their own team.",
-    "We don’t hire managers to direct others, everyone works together as self-directed team players. We want new recruits to tell us what we can do better, and to tell us how they feel they can contribute.",
-    "Team members are hired for a lifetime of service, meaning that we will support and applaud your success even if you step out on your own business venture. We want all our team members to be able to collaborate as entrepreneurs while we extend our efforts out into the community.",
-  ];
-  const companies = [
-    {
-      logo: "/images/open-opportunities/koompi.png",
-      name: "koompi",
-    },
-    {
-      logo: "/images/open-opportunities/grood.png",
-      name: "grood",
-    },
+  const { pathname } = useRouter();
+  // console.log(pathname);
+  // console.log(jobLists);
 
-    {
-      logo: "/images/open-opportunities/selendra.png",
-      name: "selendra",
-    },
-    {
-      logo: "/images/open-opportunities/va1.png",
-      name: "vitaminair",
-    },
-    {
-      logo: "/images/open-opportunities/selendra.png",
-      name: "selendra",
-    },
-  ];
   return (
     <div className="open">
       <div className="open-banner">
@@ -91,14 +34,16 @@ function index() {
                   </p>
                 </Col>
                 <Col>
-                  <a className="sw-default-btn load-more-btn">View Oppening</a>
+                  <a href="#company" className="sw-default-btn load-more-btn">
+                    View Oppening
+                  </a>
                 </Col>
               </Row>
             </Col>
             <Col xs={0} sm={0} xl={5}>
               <img
                 src="/images/open-opportunities/banner-image.svg"
-                alt="team work"
+                alt="team work svg"
               />
             </Col>
           </Row>
@@ -136,7 +81,7 @@ function index() {
           <Col xl={5}>
             <img
               src="/images/open-opportunities/goal-vision.svg"
-              alt="goal and vision"
+              alt="smallworld's goal and vision"
             />
           </Col>
         </Row>
@@ -154,6 +99,34 @@ function index() {
             </div>
           </Col>
         </Row>
+        {/* choose team */}
+        <h2>
+          <span>&lt; </span>
+          CHOOSE YOUR TEAM
+          <span> /&gt;</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet autem
+          vitae, excepturi eum recusandae ut expedita blanditiis, quaerat
+          architecto non molestias assumenda enim voluptatibus corrupti, numquam
+          consequuntur dolorum deleniti at!
+        </p>
+        <Row align="middle" gutter={[20, 20]}>
+          {jobLists.map((list) => (
+            <Col key={list.id} xl={8}>
+              <a href={`${pathname}/department/${list.id}`}>
+                <Row align="middle" className="team">
+                  <Col xl={3}>
+                    <img src={list.icon} alt={`${list.department} icon`} />
+                  </Col>
+                  <Col>
+                    <h3>{list.department}</h3>
+                  </Col>
+                </Row>
+              </a>
+            </Col>
+          ))}
+        </Row>
         <h2 className="center">
           <span>&lt; </span>
           WORK WITH US
@@ -168,7 +141,7 @@ function index() {
                 className="work-with-us"
               >
                 <Col order={work.imgOrder} xl={3}>
-                  <img src={work.img} alt="work" />
+                  <img src={work.img} alt="work with us" />
                 </Col>
                 <Col order={work.desOrder} xl={19}>
                   <h3>{work.title}</h3>
@@ -196,7 +169,7 @@ function index() {
             </Col>
           ))}
         </Row>
-        <h2 className="center">
+        <h2 id="company" className="center">
           <span>&lt; </span>
           CHOOSE YOUR COMPANY
           <span> /&gt;</span>
@@ -209,9 +182,9 @@ function index() {
         >
           {companies.map((com, i) => (
             <Col key={i} xl={4}>
-              <Link href={`/open-opportunities/koompi`}>
+              <Link href={`/open-opportunities/${com.name.toLowerCase()}`}>
                 <div className="brand">
-                  <img src={com.logo} alt={com.name} />
+                  <img src={com.logo} alt={`${com.name} logo`} />
                 </div>
               </Link>
             </Col>

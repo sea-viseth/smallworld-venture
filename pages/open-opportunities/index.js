@@ -1,13 +1,16 @@
 import { Row, Col } from "antd";
 import Link from "next/link";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
+
+//json data
 import companies from "../../data/open-page-data/companies.json";
 import values from "../../data/open-page-data/values.json";
 import workWithUs from "../../data/open-page-data/workWithUs.json";
 import recruiting from "../../data/open-page-data/recruiting.json";
 import jobLists from "../../data/open-page-data/jobLists.json";
+
 function index() {
-  const { pathname } = useRouter();
+  // const { pathname } = useRouter();
   // console.log(pathname);
   // console.log(jobLists);
 
@@ -30,7 +33,7 @@ function index() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                     dictum suscipit quis lectus quam elementum volutpat. Ac
                     potenti ameutpat. Ac potenti amet, cras magna. Lacus amet
-                    consectetur condimentum turpis sed sed at commodo.{" "}
+                    consectetur condimentum turpis sed sed at commodo.
                   </p>
                 </Col>
                 <Col>
@@ -112,20 +115,23 @@ function index() {
           consequuntur dolorum deleniti at!
         </p>
         <Row align="middle" gutter={[20, 20]}>
-          {jobLists.map((list) => (
-            <Col key={list.id} xl={8}>
-              <a href={`${pathname}/department/${list.id}`}>
-                <Row align="middle" className="team">
-                  <Col xl={3}>
-                    <img src={list.icon} alt={`${list.department} icon`} />
-                  </Col>
-                  <Col>
-                    <h3>{list.department}</h3>
-                  </Col>
-                </Row>
-              </a>
-            </Col>
-          ))}
+          {jobLists.map((list) => {
+            const { id, department, icon } = list;
+            return (
+              <Col key={list.id} xl={8}>
+                <a href={`open-opportunities/department/${id}`}>
+                  <Row align="middle" className="team">
+                    <Col xl={3}>
+                      <img src={icon} alt={`${department} icon`} />
+                    </Col>
+                    <Col>
+                      <h3>{department}</h3>
+                    </Col>
+                  </Row>
+                </a>
+              </Col>
+            );
+          })}
         </Row>
         <h2 className="center">
           <span>&lt; </span>
@@ -161,7 +167,6 @@ function index() {
             <Col key={i} xl={8}>
               <div className="recruit-card">
                 <p>
-                  {" "}
                   <span style={{ fontSize: "45px" }}>{`${i + 1}. `}</span>
                   {recruit}
                 </p>

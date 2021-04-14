@@ -7,7 +7,7 @@ function JobListing() {
   const department = query.depJobList;
   // console.log(jobLists);
   const data = jobLists.filter((job) => job.id === department);
-  // const data = [];
+
   return (
     <div className="department-list">
       <div className="container">
@@ -26,32 +26,47 @@ function JobListing() {
                 <div className="line"></div>
                 <div className="job-list">
                   {lists.map((list) => {
+                    const { id, company, position, status } = list;
                     return (
                       <Row
                         justify="space-between"
-                        key={list.id}
+                        key={id}
                         align="middle"
                         className="list"
                         //   gutter={[0, 20]}
                       >
-                        <Col>
-                          <a href={`/open-opportunities/detail/${list.id}`}>
-                            <h2>{list.position}</h2>
-                          </a>
-                          <p>{`${list.company} - ${department}`}</p>
-                        </Col>
-                        <Col>
-                          {list.status ? (
-                            <a
-                              href={`/open-opportunities/detail/${list.id}`}
-                              className="available"
-                            >
-                              Detail
-                            </a>
-                          ) : (
-                            <p className="close">Close</p>
-                          )}
-                        </Col>
+                        {status ? (
+                          <>
+                            <Col>
+                              <a href={`/open-opportunities/detail/${id}`}>
+                                <h2>{position}</h2>
+                              </a>
+                              <p>{`${company} - ${department}`}</p>
+                            </Col>
+                            <Col>
+                              <a
+                                href={`/open-opportunities/detail/${id}`}
+                                className="available"
+                              >
+                                Detail
+                              </a>
+                            </Col>
+                          </>
+                        ) : (
+                          <>
+                            <Col>
+                              <a href="#">
+                                <h2>{position}</h2>
+                              </a>
+                              <p>{`${company} - ${department}`}</p>
+                            </Col>
+                            <Col>
+                              <a href="#" className="close">
+                                Close
+                              </a>
+                            </Col>
+                          </>
+                        )}
                       </Row>
                     );
                   })}

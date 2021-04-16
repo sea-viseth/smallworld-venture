@@ -2,18 +2,14 @@ import { Row, Col } from "antd";
 import Link from "next/link";
 // import { useRouter } from "next/router";
 
-//json data
-import companies from "../../data/open-page-data/companies.json";
+//=== json data ====
 import values from "../../data/open-page-data/values.json";
+import departmentList from "../../data/open-page-data/departmentList.json";
 import workWithUs from "../../data/open-page-data/workWithUs.json";
 import recruiting from "../../data/open-page-data/recruiting.json";
-import jobLists from "../../data/open-page-data/jobLists.json";
+import companies from "../../data/open-page-data/companies.json";
 
 function index() {
-  // const { pathname } = useRouter();
-  // console.log(pathname);
-  // console.log(jobLists);
-
   return (
     <div className="open">
       <div className="open-banner">
@@ -102,10 +98,10 @@ function index() {
             </div>
           </Col>
         </Row>
-        {/* choose team */}
+        {/* choose department */}
         <h2>
           <span>&lt; </span>
-          CHOOSE YOUR TEAM
+          CHOOSE YOUR DEPARTMENT
           <span> /&gt;</span>
         </h2>
         <p>
@@ -114,18 +110,19 @@ function index() {
           architecto non molestias assumenda enim voluptatibus corrupti, numquam
           consequuntur dolorum deleniti at!
         </p>
+
         <Row align="middle" gutter={[20, 20]}>
-          {jobLists.map((list) => {
-            const { id, department, icon } = list;
+          {departmentList.map((list) => {
+            const { id, name, icon } = list;
             return (
               <Col key={list.id} xl={8}>
                 <a href={`open-opportunities/department/${id}`}>
                   <Row align="middle" className="team">
                     <Col xl={3}>
-                      <img src={icon} alt={`${department} icon`} />
+                      <img src={icon} alt={`${name} icon`} />
                     </Col>
                     <Col>
-                      <h3>{department}</h3>
+                      <h3>{name.toUpperCase()}</h3>
                     </Col>
                   </Row>
                 </a>
@@ -133,6 +130,7 @@ function index() {
             );
           })}
         </Row>
+
         <h2 className="center">
           <span>&lt; </span>
           WORK WITH US

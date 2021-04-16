@@ -1,39 +1,48 @@
 import { useRouter } from "next/router";
 import { Row, Col, Spin } from "antd";
 // import PageNotFound from "../../404";
-import jobLists from "../../../data/open-page-data/jobLists.json";
+
+// === json data ===
+import departmentList from "../../../data/open-page-data/departmentList.json";
+// jobList = list of all opportunities
+import jobList from "../../../data/open-page-data/jobList.json";
+
 function JobListing() {
+  // === get department id from url ===
   const { query } = useRouter();
-  const department = query.depJobList;
-  // console.log(jobLists);
-  const data = jobLists.filter((job) => job.id === department);
+  const depId = query.depJobList;
+
+  //=== filter a department by url ===
+  const department = departmentList.filter((dep) => dep.id === depId);
+
+  // === list of opporunities from specific department ===
+  const list = jobList.filter((job) => job.departmentId === depId);
 
   return (
     <div className="department-list">
       <div className="container">
-        {data.length < 1 ? (
+        {list.length < 1 ? (
           <Row justify="center">
             <Col>
               <Spin tip="Loading..." size="large" />
             </Col>
           </Row>
         ) : (
-          data.map((res) => {
-            const { id, department, icon, lists } = res;
+          department.map((res) => {
+            const { id, name } = res;
             return (
               <div key={id}>
-                <h1>{department}</h1>
+                <h1>{name.toUpperCase()}</h1>
                 <div className="line"></div>
                 <div className="job-list">
-                  {lists.map((list) => {
-                    const { id, company, position, status } = list;
+                  {list.map((res) => {
+                    const { id, company, position, status } = res;
                     return (
                       <Row
                         justify="space-between"
                         key={id}
                         align="middle"
                         className="list"
-                        //   gutter={[0, 20]}
                       >
                         {status ? (
                           <>
@@ -41,7 +50,9 @@ function JobListing() {
                               <a href={`/open-opportunities/detail/${id}`}>
                                 <h2>{position}</h2>
                               </a>
-                              <p>{`${company} - ${department}`}</p>
+
+                              {/* === name is department name === */}
+                              <p>{`${company} - ${name.toUpperCase()}`}</p>
                             </Col>
                             <Col>
                               <a
@@ -58,7 +69,9 @@ function JobListing() {
                               <a href="#">
                                 <h2>{position}</h2>
                               </a>
-                              <p>{`${company} - ${department}`}</p>
+
+                              {/* === name is department name === */}
+                              <p>{`${company} - ${name.toUpperCase()}`}</p>
                             </Col>
                             <Col>
                               <a href="#" className="close">

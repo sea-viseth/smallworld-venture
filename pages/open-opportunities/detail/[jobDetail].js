@@ -3,11 +3,11 @@ import jobList from "../../../data/open-page-data/jobList.json";
 import { Timeline } from "antd";
 
 function JobDetail() {
-  // === get id  ===
+  // === get opportunity id from url ===
   const { query } = useRouter();
   const id = query.jobDetail;
 
-  // === get an opportunity by url id ===
+  // === filter an opportunity by url id ===
   const detail = jobList.filter((job) => job.id.toString() === id);
 
   return (

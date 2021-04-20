@@ -13,7 +13,7 @@ function Layout({ children }) {
       <Head>
         <title>
           {`${
-            path === "" ? "Smallworldventure" : "Smallworldventure | " + path
+            path === "" ? "Smallworldventure" : path + " - Smallworldventure"
           }`}
         </title>
       </Head>

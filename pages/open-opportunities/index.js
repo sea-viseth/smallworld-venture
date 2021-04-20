@@ -33,7 +33,7 @@ function index() {
                   </p>
                 </Col>
                 <Col>
-                  <a href="#company" className="sw-default-btn load-more-btn">
+                  <a href="#openning" className="sw-default-btn load-more-btn">
                     View Oppening
                   </a>
                 </Col>
@@ -51,7 +51,7 @@ function index() {
       <div className="about-smallworld container">
         <h2>
           <span>&lt; </span>
-          VALUES
+          OUR VALUES
           <span> /&gt;</span>
         </h2>
         <Row gutter={[10, 5]}>
@@ -98,8 +98,9 @@ function index() {
             </div>
           </Col>
         </Row>
-        {/* choose department */}
-        <h2>
+        {/* ==== choose department ==== */}
+        {/* id is for view openning button */}
+        <h2 id="openning">
           <span>&lt; </span>
           CHOOSE YOUR DEPARTMENT
           <span> /&gt;</span>
@@ -172,7 +173,7 @@ function index() {
             </Col>
           ))}
         </Row>
-        <h2 id="company" className="center">
+        <h2 className="center">
           <span>&lt; </span>
           CHOOSE YOUR COMPANY
           <span> /&gt;</span>

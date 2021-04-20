@@ -11,16 +11,15 @@ function CompanyDetail() {
   const { query } = useRouter();
   const companyName = query.companyDetail;
 
-  // === get company info ===
+  // === filter company info===
   const companyInfo = companies.filter(
     (com) => com.name.toLowerCase() === companyName
   );
 
-  //get list of opportunities from specific company
+  //filter list of opportunities from a specific company
   const list = jobList.filter(
     (job) => job.company.toLowerCase() === companyName
   );
-  console.log(list);
 
   return (
     <div className="com-detail">

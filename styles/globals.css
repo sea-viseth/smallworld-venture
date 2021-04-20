@@ -55,6 +55,7 @@ h2 span {
 } */
 .nav img {
   width: 130px !important;
+  cursor: pointer;
 }
 .ant-col {
   z-index: 1;
@@ -374,6 +375,7 @@ h2 span {
   transition: 0.3s;
   border-radius: 8px;
   height: 100% !important;
+  cursor: pointer;
 }
 .news .card:hover {
   transform: translateY(-5px);
@@ -435,9 +437,6 @@ h2 span {
 .loading {
   width: 100% !important;
 }
-img {
-  width: 100%;
-}
 .ant-modal-close-x {
   display: block;
   width: 40px !important;
@@ -466,10 +465,20 @@ img {
   height: 95vh !important;
   overflow-y: scroll;
   scrollbar-width: thin;
+  padding: 40px !important;
+}
+.ant-modal-body figure img {
+  width: 100% !important;
 }
 .card-modal .ant-modal-body p {
   font-size: 18px !important;
 }
+.ant-col-xl-5,
+.ant-col-xxl-5 {
+  flex: 0 0 20%;
+  max-width: 20% !important;
+}
+
 /* spaces */
 .spaces {
   margin: 60px 0;
@@ -598,7 +607,7 @@ input[type="text"]:focus {
   margin-right: 20px;
 }
 .office-info a {
-  color: rgba(0, 0, 0, 0.87);
+  color: #32383e;
 }
 .office-info img {
   width: 100%;
@@ -781,13 +790,13 @@ input[type="text"]:focus {
 }
 /* footer */
 .footer {
-  padding: 40px 15%;
-  background-color: #0b0e11;
+  padding: 20px 15%;
+  background-color: #32383e;
 }
 .footer .footer-menu {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .footer a {
   color: #95a5a6;
@@ -809,7 +818,7 @@ input[type="text"]:focus {
   border-radius: 4px;
   margin-left: 15px;
   padding: 10px;
-  color: #0b0e11;
+  color: #32383e;
 }
 .copy-right {
   text-align: center;
@@ -828,6 +837,7 @@ input[type="text"]:focus {
   margin-right: 20px;
   position: relative;
   top: 8px;
+  color: #32383e;
 }
 
 @media only screen and (max-width: 1440px) {

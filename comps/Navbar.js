@@ -70,7 +70,7 @@ function Navbar() {
                   </a>
                 </Link>
               </Col>
-              <Col>
+              {/* <Col>
                 <Link href="/open-opportunities">
                   <a
                     className={
@@ -82,7 +82,7 @@ function Navbar() {
                     Oppen-Opportunities
                   </a>
                 </Link>
-              </Col>
+              </Col> */}
             </Row>
           </Col>
           <FiMenu className="open-menu-btn" onClick={showDrawer} />
@@ -119,9 +119,9 @@ function Navbar() {
               <Menu.Item onClick={onClose}>
                 <Link href="/contact">Contact</Link>
               </Menu.Item>
-              <Menu.Item onClick={onClose}>
+              {/* <Menu.Item onClick={onClose}>
                 <Link href="/open-opportunities">Open-Opportunities</Link>
-              </Menu.Item>
+              </Menu.Item> */}
             </Menu>
           </Drawer>
         </Row>

@@ -3,7 +3,9 @@ import React from "react";
 function pageNotFound() {
   return (
     <div>
-      <h1>404</h1>
+      <center>
+        <h1>404</h1>
+      </center>
     </div>
   );
 }

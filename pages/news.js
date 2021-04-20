@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "../comps/Card";
 import { Row, Col, Spin } from "antd";
 import axios from "axios";
+import MetaTags from "../comps/MetaTags";
 
 function News() {
   const [community, setCommunity] = useState([]);
@@ -27,44 +28,57 @@ function News() {
   }, []);
 
   return (
-    <div className="container">
-      <div className="news">
-        <h2 className="about-title">
-          <span>&lt;</span> START-UP NEWS <span>/&gt;</span>
-        </h2>
-        <p className="p-description">
-          Our ventures are working on exciting projects in various industries!
-          Read our community news to stay updated on their initiatives and
-          milestones!
-        </p>
-        <Row className="outter-card" gutter={[24, 24]}>
-          {community.length === 0 ? (
-            <div className="loading">
-              <Spin tip="Loading ..." />
-            </div>
-          ) : (
-            community.map((community) => {
-              const { title, description, thumbnail, author, guid } = community;
-              return (
-                <Col xs={24} sm={24} md={12} lg={8} xl={6} key={guid}>
-                  <Card
-                    title={title}
-                    desc={description}
-                    image={
-                      thumbnail.match(/[^/]+(jpg|png|gif|jpeg)$/)
-                        ? thumbnail
-                        : null
-                    }
-                    author={author}
-                  />
-                </Col>
-              );
-            })
-          )}
-        </Row>
-      </div>
+    <>
+      <MetaTags
+        title="News"
+        description="Our ventures are working on exciting projects in various industries! Read our community news to stay updated on their initiatives and milestones!"
+        canonical="https://smallworldventure.com/news"
+        thumbnail="https://smallworldventure.com/images/thumbnail/news.png"
+      />
+      <div className="container">
+        <div className="news">
+          <h2 className="about-title">
+            <span>&lt;</span> START-UP NEWS <span>/&gt;</span>
+          </h2>
+          <p className="p-description">
+            Our ventures are working on exciting projects in various industries!
+            Read our community news to stay updated on their initiatives and
+            milestones!
+          </p>
+          <Row className="outter-card" gutter={[24, 24]}>
+            {community.length === 0 ? (
+              <div className="loading">
+                <Spin tip="Loading ..." />
+              </div>
+            ) : (
+              community.map((community) => {
+                const {
+                  title,
+                  description,
+                  thumbnail,
+                  author,
+                  guid,
+                } = community;
+                return (
+                  <Col xs={24} sm={24} md={12} lg={8} xl={6} key={guid}>
+                    <Card
+                      title={title}
+                      desc={description}
+                      image={
+                        thumbnail.match(/[^/]+(jpg|png|gif|jpeg)$/)
+                          ? thumbnail
+                          : null
+                      }
+                      author={author}
+                    />
+                  </Col>
+                );
+              })
+            )}
+          </Row>
+        </div>
 
-      {/* <div className="news">
+        {/* <div className="news">
         <h2 className="about-title">
           <span>&lt;</span> STARTUP NEWS <span>/&gt;</span>
         </h2>
@@ -99,7 +113,7 @@ function News() {
           )}
         </Row> */}
 
-      {/* <Button
+        {/* <Button
           size="large"
           target="_blank"
           href="https://medium.com/@koompi"
@@ -107,8 +121,9 @@ function News() {
         >
           Load More
         </Button> */}
-      {/* </div> */}
-    </div>
+        {/* </div> */}
+      </div>
+    </>
   );
 }
 

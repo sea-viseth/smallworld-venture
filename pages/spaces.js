@@ -1,7 +1,14 @@
 import { Image, Row, Col } from "antd";
+import MetaTags from "../comps/MetaTags";
 function Spaces() {
   return (
     <>
+      <MetaTags
+        title="Spaces"
+        description="SmallWorld provides a business accelerator space where newly forming and existing enterprises can collaborate."
+        canonical="https://smallworldventure.com/spaces"
+        thumbnail="https://smallworldventure.com/images/thumbnail/spaces.png"
+      />
       <div className="container">
         <div className="spaces">
           <Row align="middle">
@@ -31,20 +38,14 @@ function Spaces() {
             </Col>
             <Col xs={24} sm={24} lg={18}>
               <p>
-                SmallWorld provides professional shared workspace and business
-                accelerator space where freelancers, newly forming and existing
-                enterprises can collaborate in a professional, productive,
-                flexible and innovative workspace with established experts.
+                SmallWorld provides a business accelerator space where newly
+                forming and existing enterprises can collaborate. SmallWorld
+                Realty is designed to be an integral hub for the Southeast Asian
+                business and startup community.
               </p>
               <p>
-                SmallWorld Realty spaces are located and designed to be an
-                integral hub for the Southeast Asian business and startup
-                community offering the benefits you have come to expect from a
-                full service provider.
-              </p>
-              <p>
-                We are all tied together with a professional scene that gives
-                you unlimited opportunities.
+                Our collaborative scene gives you unlimited opportunities to
+                connect with like-minded individuals from various industries.
               </p>
             </Col>
           </Row>
@@ -139,12 +140,12 @@ function Spaces() {
             </Col>
             <Col xs={24} sm={24} lg={18}>
               <p>
-                If you are looking for a professional, corporate-style work
-                space in the heart of the city, SmallWorld Raintree might be
-                your best fit. We offer full-range services from high-speed
-                wifi, utilities, meeting room(s), and event spaces. What’s more?
-                Most people know where Raintree is so you don’t have to break a
-                sweat giving directions to your clients.
+                If you are looking for a corporate workspace in the heart of the
+                city, SmallWorld Raintree might be your best fit. Our full-range
+                services include high-speed Wi-Fi connection, utilities, meeting
+                room(s), and event spaces. Even better? Most people know where
+                Raintree is so you don’t need to break a sweat giving directions
+                to your clients.
               </p>
             </Col>
           </Row>
@@ -154,12 +155,12 @@ function Spaces() {
             </Col>
             <Col xs={24} sm={24} lg={18}>
               <p>
-                Boran What if your team likes your space a little
-                unconventional? We’d like to introduce you to a more homely
-                option. Small World Pteas Boran offers multiple array of rooms
-                to choose from, each of which has its own charm. It isn’t your
-                typical white-wall, glass-door kind of room and maybe that is
-                why your team might like it more!
+                What if your team likes your space a little more unconventional?
+                We’d like to introduce you to a more homely option. Small World
+                Pteas Boran offers an array of rooms to choose from, each of
+                which has its own charm. It isn’t your typical white-wall,
+                glass-door kind of room but maybe that is why your team might
+                love it!
               </p>
             </Col>
           </Row>

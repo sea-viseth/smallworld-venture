@@ -1,4 +1,5 @@
 import { Row, Col } from "antd";
+import MetaTags from "../comps/MetaTags";
 import data from "../data/directors.json";
 import partners from "../data/partners.json";
 import startups from "../data/start-up.json";
@@ -6,6 +7,15 @@ import startups from "../data/start-up.json";
 function About() {
   return (
     <>
+      <MetaTags
+        title="About Us"
+        description="Founded in 2011 as SmallWorld Cambodia, we created a shared
+        professional workspace where progressive young business minds
+        could explore and pursue their aspirations while transforming
+        ideas into reality."
+        canonical="https://smallworldventure.com/about"
+        thumbnail="https://smallworldventure.com/images/thumbnail/about.png"
+      />
       <div className="about">
         <Row className="about-info" align="middle" justify="space-between">
           <Col md={{ span: 24 }} lg={{ span: 11 }} span={{ xxl: 8 }}>
@@ -114,8 +124,8 @@ function About() {
               <span>&lt;</span> Strategic Partners <span>/&gt;</span>
             </h2>
             <p>
-              We're especially pleased to have built strategic partnerships with
-              forward thinking leaders in the business world.
+              We are especially pleased to have built strategic partnerships
+              with forward-thinking leaders in the business world.
             </p>
             <div className="partner-container">
               <Row

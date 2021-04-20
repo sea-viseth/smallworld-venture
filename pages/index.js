@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-// import Head from "next/head";
+import Head from "next/head";
 import Card from "../comps/Card";
 import CardBox from "../comps/CardBox";
 import { Row, Col, Spin, Button } from "antd";
 import axios from "axios";
+import MetaTags from "../comps/MetaTags";
 
 // Card for news
 // CardBox for smallworld info
@@ -30,10 +31,12 @@ function Home() {
   }, []);
   return (
     <>
-      {/* <Head>
-        {" "}
-        <title>Smallworldventure | Home</title>{" "}
-      </Head> */}
+      <MetaTags
+        title="Home"
+        description="We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects."
+        canonical="https://smallworldventure.com/"
+        thumbnail="https://smallworldventure.com/images/thumbnail/home.png"
+      />
       <div className="home">
         <div className="big-header"></div>
         <div className="banner">

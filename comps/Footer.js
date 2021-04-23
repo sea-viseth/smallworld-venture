@@ -12,7 +12,10 @@ function Footer() {
       <div className="footer">
         <center>
           <img
-            style={{ width: "170px", marginTop: "20px" }}
+            style={{ marginTop: "20px" }}
+            width="130px"
+            height="75.84px"
+            loading="lazy"
             src="/images/sw-white.png"
             alt="smallworld-logo"
           />

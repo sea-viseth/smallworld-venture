@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-// import Head from "next/head";
-import Card from "../comps/Card";
-import CardBox from "../comps/CardBox";
+//=== code spliting for performance ===
+import loadable from "@loadable/component";
+const Card = loadable(() => import("../comps/Card"));
+const CardBox = loadable(() => import("../comps/CardBox"));
+
+// import Card from "../comps/Card";
+// import CardBox from "../comps/CardBox";
 import { Row, Col, Spin, Button } from "antd";
 import axios from "axios";
+import MetaTags from "../comps/MetaTags";
 
+// ==== json data ===
+import smallworld from "../data/smallworld.json";
 // Card for news
 // CardBox for smallworld info
 function Home() {
@@ -29,15 +36,16 @@ function Home() {
       });
   }, []);
   return (
-    <>
-      {/* <Head>
-        {" "}
-        <title>Smallworldventure | Home</title>{" "}
-      </Head> */}
+    <React.Fragment>
+      <MetaTags
+        title="Home"
+        description="We began in 2011 by providing a collaborative workspace environment for entrepreneurs, and then quickly moved forward raising investment capital to fund new startup projects."
+        canonical="https://smallworldventure.com/"
+        thumbnail="https://smallworldventure.com/images/thumbnail/home.png"
+      />
       <div className="home">
         <div className="big-header"></div>
         <div className="banner">
-          {" "}
           <div className="container">
             <Row justify="space-between">
               <Col xs={24} sm={24} xl={14} xxl={10}>
@@ -75,44 +83,26 @@ function Home() {
               </Col>
               <Col xs={0} sm={0} xl={8} xxl={0}>
                 <img
+                  width="370px"
+                  height="400px"
                   className="space-ship"
                   src="/images/spaceship.png"
-                  alt="space-ship"
+                  alt="space-ship image"
                 />
               </Col>
-            </Row>{" "}
+            </Row>
           </div>
         </div>
         <div className="container ">
           <Row className="outter-card-box" gutter={[24, 24]}>
-            <Col md={12} xl={6}>
-              <CardBox
-                title="Startup Community"
-                des="SmallWorld Ventures is committed to becoming the number one catalyst for funding and assisting startups in Cambodia."
-                src="/images/start-up.png"
-              />
-            </Col>
-            <Col md={12} xl={6}>
-              <CardBox
-                title="Seed Equity Investments"
-                des="Seed Equity Investments are provided to promising startup teams with projects ranging between 5,000 to 25,000 USD."
-                src="/images/venture-building.png"
-              />
-            </Col>
-            <Col md={12} xl={6}>
-              <CardBox
-                title="Venture Building"
-                des="Smallworld Ventures has built an internal team of technicians engaged in research and development projects with an aim to spin off new ventures."
-                src="/images/investment.png"
-              />
-            </Col>
-            <Col md={12} xl={6}>
-              <CardBox
-                title="Ecovillage Development"
-                des="At our rural ecovillage project, we're building a hands-on learning, working, and living environment with a balance among the natural world, education, economics, and sustainable living practices."
-                src="/images/reforest.png"
-              />
-            </Col>
+            {smallworld.map((res, i) => {
+              const { title, des, img } = res;
+              return (
+                <Col key={i} md={12} xl={6}>
+                  <CardBox title={title} des={des} src={img} />
+                </Col>
+              );
+            })}
           </Row>
         </div>
         <div className="idea-banner">
@@ -193,50 +183,11 @@ function Home() {
                 Load More
               </Button>
             </Link>
-
             <br />
-            {/* <h2 className="about-title">
-            <span>&lt;</span> Startup News <span>/&gt;</span>
-          </h2>
-          <p className="p-description">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt
-            sociosqu ullamcorper, class per curabitur natoque orci lobortis
-            commodo varius suscipit.
-          </p>
-          <Row className="outter-card" gutter={[24, 24]}>
-            {koompi.length === 0 ? (
-              <div className="loading">
-                <Spin tip="Loading ..." />
-              </div>
-            ) : (
-              koompi.slice(0, 4).map((koompi) => {
-                const { title, description, thumbnail, author, guid } = koompi;
-                return (
-                  <Col xs={24} sm={24} md={12} lg={8} xl={6} key={guid}>
-                    <Card
-                      title={title}
-                      desc={description}
-                      image={
-                        thumbnail.match(/[^/]+(jpg|png|gif|jpeg)$/)
-                          ? thumbnail
-                          : null
-                      }
-                      author={author}
-                    />
-                  </Col>
-                );
-              })
-            )}
-          </Row>
-          <Link to="/news">
-            <Button size="large" className="sw-default-btn">
-              Load More
-            </Button>
-          </Link> */}
           </div>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

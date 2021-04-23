@@ -59,23 +59,6 @@ function JobDetail() {
             </div>
           );
         })}
-        <h2>Contact Us:</h2>
-        <img
-          className="arrow-down"
-          src="/images/spaces/arrow-down.svg"
-          alt="arrow down svg"
-        />
-        <br />
-        <a href="/contact" className="sw-default-btn load-more-btn">
-          Contact Us Page
-        </a>
-        <a
-          style={{ marginLeft: "20px" }}
-          href="/"
-          className="sw-default-btn load-more-btn"
-        >
-          Home Page
-        </a>
       </div>
     </div>
   );

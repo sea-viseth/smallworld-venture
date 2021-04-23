@@ -20,7 +20,12 @@ function Navbar() {
         <Row align="middle" justify="space-between" className="logo">
           <Col className="nav-logo">
             <Link href="/">
-              <img src="/images/sw-white.png" alt="Smallworld Venture Logo" />
+              <img
+                width="130px"
+                height="75.84px"
+                src="/images/sw-white.png"
+                alt="Smallworld Venture Logo"
+              />
             </Link>
           </Col>
           <Col className="nav-menu">
@@ -93,7 +98,12 @@ function Navbar() {
             visible={visible}
           >
             <div className="nav logo">
-              <img src="/images/sw-white.png" alt="Smallworld Venture Logo" />
+              <img
+                width="130px"
+                height="75.84px"
+                src="/images/sw-white.png"
+                alt="Smallworld Venture Logo"
+              />
             </div>
             <Menu className="side-nav">
               <Menu.Item onClick={onClose}>

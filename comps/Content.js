@@ -43,7 +43,7 @@ function Content({ content }) {
         >
           {" "}
           <div className="content-img-wrapper">
-            <img src={content.img} alt={content.title} />
+            <img loading="lazy" src={content.img} alt={content.title} />
           </div>
         </Col>
       </Row>

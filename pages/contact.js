@@ -2,6 +2,7 @@ import { Row, Col, Form, Input, Button, notification } from "antd";
 import axios from "axios";
 import { useState } from "react";
 import { FaTelegramPlane, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import MetaTags from "../comps/MetaTags";
 
 function Contact() {
   const [isLoading, setIsLoading] = useState(false);
@@ -9,9 +10,9 @@ function Contact() {
     labelCol: { span: 24 },
     wrapperCol: { span: 24 },
   };
-  const onFinish = (values) => {
-    axios
-      .post("https://mail.smallworldventure.com/api/form", { ...values })
+  const onFinish = async (values) => {
+    await axios
+      .post("http://localhost:4405/api/form", { ...values })
       .then(() => {
         setIsLoading(true);
         notification["success"]({
@@ -27,6 +28,13 @@ function Contact() {
   };
   return (
     <>
+      <MetaTags
+        title="Contact"
+        description="We look forward to assisting you at any working hour. There are several startups in the same building, so you just have to know who you are looking for."
+        canonical="https://smallworldventure.com/contact"
+        thumbnail="https://smallworldventure.com/images/thumbnail/contact.png"
+      />
+
       <div className="container">
         <div className="contact-page">
           <Row gutter={50}>
@@ -44,7 +52,7 @@ function Contact() {
                     { required: true, message: "Please input your fullname!" },
                   ]}
                 >
-                  <Input />
+                  <Input disabled={true} />
                 </Form.Item>
                 <Form.Item
                   name="email"
@@ -57,7 +65,7 @@ function Contact() {
                     { type: "email", message: "The email is not valid!" },
                   ]}
                 >
-                  <Input />
+                  <Input disabled={true} />
                 </Form.Item>
                 <Form.Item
                   name="message"
@@ -73,7 +81,7 @@ function Contact() {
                     },
                   ]}
                 >
-                  <Input.TextArea />
+                  <Input.TextArea disabled={true} />
                 </Form.Item>
                 <Form.Item>
                   <br />
@@ -82,6 +90,7 @@ function Contact() {
                     htmlType="submit"
                     style={{ padding: "20px 60px" }}
                     loading={isLoading ? true : false}
+                    disabled={true}
                   >
                     Submit
                   </Button>
@@ -127,14 +136,14 @@ function Contact() {
         <Col className="info" xs={24} sm={24} md={12}>
           <h2>SmallWorld</h2>
           <p>
-            We look forward to welcome you at any working hour. Though, most of
-            the time there are someone at SmallWorld. There are several startups
-            in the same building, so make sure you know who you are looking for.
-            We will surely direct you to the right person!
+            We look forward to assisting you at any working hour. There are
+            several startups in the same building, so you just have to know who
+            you are looking for. We will then direct you to the right person!
+            Come visit to get a feel of the place!
           </p>
           <p>
-            Look at the map, 2F-01, Raintree, #299 Preah Ang Duong, Sangkat Wat
-            Phnom, Khan Daun Penh! Come walk around and feel it yourself.
+            Our address: 2F-01, Raintree, #299 Preah Ang Duong, Sangkat Wat
+            Phnom, Khan Daun Penh
           </p>
         </Col>
         <Col xs={24} sm={24} md={12} style={{ lineHeight: "0" }}>

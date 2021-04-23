@@ -29,7 +29,7 @@ function CompanyDetail() {
           return (
             <div key={i}>
               <Row align="middle" justify="space-between">
-                <Col xl={14} className="about-com">
+                <Col md={16} lg={14} xl={12} xxl={10} className="about-com">
                   <h1>
                     <span>&lt;</span>
                     {name.toUpperCase()}
@@ -39,7 +39,7 @@ function CompanyDetail() {
                   <p>{des}</p>
                   <div className="line"></div>
                 </Col>
-                <Col xl={6}>
+                <Col xs={0} sm={0} md={5} lg={6}>
                   <img src={logo} alt={`${name} logo`} />
                 </Col>
               </Row>

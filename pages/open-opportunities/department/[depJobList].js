@@ -37,49 +37,49 @@ function JobListing() {
                 <div className="job-list">
                   {list.map((res) => {
                     const { id, company, position, status } = res;
-                    return (
+                    return status ? (
                       <Row
                         justify="space-between"
                         key={id}
                         align="middle"
                         className="list"
                       >
-                        {status ? (
-                          <>
-                            <Col>
-                              <a href={`/open-opportunities/detail/${id}`}>
-                                <h2>{position}</h2>
-                              </a>
+                        <Col>
+                          <a href={`/open-opportunities/detail/${id}`}>
+                            <h2>{position}</h2>
+                          </a>
 
-                              {/* === name is department name === */}
-                              <p>{`${company} - ${name.toUpperCase()}`}</p>
-                            </Col>
-                            <Col>
-                              <a
-                                href={`/open-opportunities/detail/${id}`}
-                                className="available"
-                              >
-                                Detail
-                              </a>
-                            </Col>
-                          </>
-                        ) : (
-                          <>
-                            <Col>
-                              <a href="#">
-                                <h2>{position}</h2>
-                              </a>
+                          {/* === name is department name === */}
+                          <p>{`${company} - ${name.toUpperCase()}`}</p>
+                        </Col>
+                        <Col>
+                          <a
+                            href={`/open-opportunities/detail/${id}`}
+                            className="available"
+                          >
+                            Detail
+                          </a>
+                        </Col>
+                      </Row>
+                    ) : (
+                      <Row
+                        justify="space-between"
+                        key={id}
+                        align="middle"
+                        className="list"
+                        id="disable-list"
+                      >
+                        <Col>
+                          <h2 style={{ color: "#919090" }}>{position}</h2>
 
-                              {/* === name is department name === */}
-                              <p>{`${company} - ${name.toUpperCase()}`}</p>
-                            </Col>
-                            <Col>
-                              <a href="#" className="close">
-                                Close
-                              </a>
-                            </Col>
-                          </>
-                        )}
+                          {/* === name is department name === */}
+                          <p>{`${company} - ${name.toUpperCase()}`}</p>
+                        </Col>
+                        <Col>
+                          <a href="#" disabled className="close">
+                            Close
+                          </a>
+                        </Col>
                       </Row>
                     );
                   })}

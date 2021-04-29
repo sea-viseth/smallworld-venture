@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import loadable from "@loadable/component";
 const ApplyNow = loadable(() => import("../../../comps/ApplyNow"));
 
+import departmentList from "../../../data/open-page-data/departmentList.json";
 import jobList from "../../../data/open-page-data/jobList.json";
 import { Timeline } from "antd";
 

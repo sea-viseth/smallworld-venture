@@ -750,6 +750,7 @@ input[type="text"]:focus {
 /* #disable-list {
   pointer-events: "none" !important;
 } */
+
 #disable-list:hover {
   cursor: not-allowed;
 }

@@ -1,4 +1,9 @@
 import { useRouter } from "next/router";
+
+// === code splitting for performance ===
+import loadable from "@loadable/component";
+const ApplyNow = loadable(() => import("../../../comps/ApplyNow"));
+
 import jobList from "../../../data/open-page-data/jobList.json";
 import { Timeline } from "antd";
 
@@ -59,6 +64,14 @@ function JobDetail() {
             </div>
           );
         })}
+        <img
+          width="70px"
+          height="140px"
+          src="/images/open-opportunities/arrow-down.svg"
+          alt="arrow down"
+        />
+        <br />
+        <ApplyNow />
       </div>
     </div>
   );

@@ -57,7 +57,7 @@ function CompanyDetail() {
         <div className="job-list">
           {list.map((res) => {
             const { id, company, position, status } = res;
-            return (
+            return status ? (
               <Row
                 key={id}
                 justify="space-between"
@@ -65,38 +65,40 @@ function CompanyDetail() {
                 align="middle"
                 className="list"
               >
-                {status ? (
-                  <>
-                    <Col>
-                      <a href={`/open-opportunities/detail/${id}`}>
-                        <h2>{position}</h2>
-                      </a>
-                      <p>{`${company}`}</p>
-                    </Col>
-                    <Col>
-                      <a
-                        href={`/open-opportunities/detail/${id}`}
-                        className="available"
-                      >
-                        Detail
-                      </a>
-                    </Col>
-                  </>
-                ) : (
-                  <>
-                    <Col>
-                      <a href="#">
-                        <h2>{position}</h2>
-                      </a>
-                      <p>{`${company}`}</p>
-                    </Col>
-                    <Col>
-                      <a href="#" className="close">
-                        Close
-                      </a>
-                    </Col>
-                  </>
-                )}
+                <Col>
+                  <a href={`/open-opportunities/detail/${id}`}>
+                    <h2>{position}</h2>
+                  </a>
+                  <p>{`${company}`}</p>
+                </Col>
+                <Col>
+                  <a
+                    href={`/open-opportunities/detail/${id}`}
+                    className="available"
+                  >
+                    Detail
+                  </a>
+                </Col>
+              </Row>
+            ) : (
+              <Row
+                key={id}
+                justify="space-between"
+                key={id}
+                align="middle"
+                className="list"
+                id="disable-list"
+              >
+                <Col>
+                  <h2 style={{ color: "#919090" }}>{position}</h2>
+
+                  <p>{`${company}`}</p>
+                </Col>
+                <Col>
+                  <a href="#" disabled className="close">
+                    Close
+                  </a>
+                </Col>
               </Row>
             );
           })}

@@ -593,6 +593,7 @@ input[type="text"]:focus {
   margin-top: -80px;
   padding: 100px 0 50px 0;
   background-color: #053f64;
+
   z-index: 3 !important;
 }
 
@@ -640,6 +641,7 @@ input[type="text"]:focus {
 
 .employees-brands {
   background-color: rgb(4, 76, 121);
+
   border-radius: 12px;
   width: 259px;
   padding: 20px 30px;

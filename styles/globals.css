@@ -216,7 +216,7 @@ h2 span {
 .about .portfolios {
   margin: 120px 0;
 }
-/* board-director */
+/* === board-director === */
 .board-director {
   background-color: #ffffff;
   padding: 80px 0;
@@ -235,7 +235,15 @@ h2 span {
   margin-bottom: 40px;
   font-size: 20px;
 }
+.directors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 50px;
+}
 .directors-back {
+  /* width: 80%; */
+  height: 350px;
   padding: 15px;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -247,13 +255,6 @@ h2 span {
   width: 100% !important;
   border-radius: 8px;
 }
-/* .directors-photo {
-  height: 200px;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  border-radius: 8px;
-} */
 
 .directors p {
   font-size: 16px;
@@ -1047,6 +1048,7 @@ input[type="text"]:focus {
   .board-director .container p:nth-child(2) {
     padding: 0;
   }
+
   .partner p {
     padding: 0;
   }
@@ -1129,6 +1131,10 @@ input[type="text"]:focus {
   .news .card .card-des {
     min-height: 190px;
   }
+  .directors {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .works-content {
@@ -1149,6 +1155,10 @@ input[type="text"]:focus {
   }
   .job-detail {
     margin: 35px 0;
+  }
+  .directors {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1217,5 +1227,10 @@ input[type="text"]:focus {
   }
   .com-detail {
     margin: 35px 0;
+  }
+  .directors {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
   }
 }

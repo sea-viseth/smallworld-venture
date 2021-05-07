@@ -95,7 +95,19 @@ function About() {
               We're honored to have courageous and insightful business and
               community leaders to serve on our Board of Directors.
             </p>
-            <Row className="directors" gutter={[24, 24]}>
+            <div className="directors">
+              {data.map((res) => {
+                const { fullName, photo, id, position } = res;
+                return (
+                  <div className="directors-back">
+                    <img src={photo} alt={fullName} />
+                    <h3>{fullName}</h3>
+                    <p>{position}</p>
+                  </div>
+                );
+              })}
+            </div>
+            {/* <Row className="directors" gutter={[24, 24]}>
               {data.map((res) => {
                 const { fullName, photo, id, position } = res;
                 return (
@@ -116,7 +128,7 @@ function About() {
                   </Col>
                 );
               })}
-            </Row>
+            </Row> */}
           </div>
         </div>
         <div className="container">

@@ -143,6 +143,19 @@ function About() {
                 })}
               </Row>
             </div>
+
+            <h2 className="about-title">
+              <span>&lt;</span> ISP Partners <span>/&gt;</span>
+              <br />
+              <br />
+              <center>
+                <img
+                  src="/images/SINET-Primary-Logo-1.png"
+                  alt="sinet"
+                  style={{ width: "200px", borderRadius: "8px" }}
+                />
+              </center>
+            </h2>
           </div>
         </div>
       </div>
